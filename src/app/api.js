@@ -30,7 +30,7 @@ angular.module('paymewDistributor')
       };
     }
 
-    var url = apiConfig.isTest ? apiConfig.lbs_url : apiConfig.test_url;
+    var url = apiConfig.isTest ? apiConfig.test_url : apiConfig.lbs_url;
 
     // Public API here
     return {
