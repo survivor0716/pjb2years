@@ -7,10 +7,12 @@
 
   /** @ngInject */
   function HomeController($scope, $window, $log, $timeout) {
+    //Angular Animations: ng-view
+    $scope.pageClass = 'page-home';
 
     //var random1 = msg[Math.floor(Math.random() * msg.length)];
     function randomAnimate() {
-      var msg = ["fadeIn", "bounceInDown", "bounceInUp", "bounceInLeft", "bounceInRight", "bounceInDown", "bounceIn","fadeInUp","fadeInDown","fadeInLeft","fadeInRight"];
+      var msg = ["fadeIn", "bounceInDown", "bounceInUp", "bounceInLeft", "bounceInRight", "bounceInDown", "bounceIn", "fadeInUp", "fadeInDown", "fadeInLeft", "fadeInRight"];
       var random1 = msg[Math.floor(Math.random() * msg.length)];
       return random1;
     }
@@ -20,8 +22,8 @@
     for (var i = 1; i <= 24; i++) {
 
       var obj = {
-        src: "assets/images/" + i + "@2x.png",
-        class: "img" + i + " animated",
+        src   : "assets/images/" + i + "@2x.png",
+        class : "img" + i + " animated",
         random: randomAnimate(),
         active: false
       };
@@ -37,7 +39,7 @@
           obj.active = true;
           $log.debug(obj);
           $log.debug('active = true');
-        }, i * 500);
+        }, i * 300);
       })(obj);
 
     }

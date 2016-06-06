@@ -1,174 +1,199 @@
-$wid:20vw;
-.back{
+$wid: 20vw;
+.back {
   width: 100%;
   height: 100vh;
-  background: -moz-linear-gradient(top, #000000 0%, gray 50%, #000000 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#000000), color-stop(50%,gray), color-stop(100%,#000000));
-  background: -webkit-linear-gradient(top, #000000 0%,gray 50%, #000000 100%);
-  background: -o-linear-gradient(top, #000000 0%,gray 50%,#000000 100%);
-  background: -ms-linear-gradient(top, #000000 0%,gray 50%,#000000 100%);
-  background: linear-gradient(to bottom, #000000 0%,gray 50%,#000000 100%);
+  //background: -moz-linear-gradient(top, #000000 0%, gray 50%, #000000 100%);
+  //background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #000000), color-stop(50%, gray), color-stop(100%, #000000));
+  //background: -webkit-linear-gradient(top, #000000 0%, gray 50%, #000000 100%);
+  //background: -o-linear-gradient(top, #000000 0%, gray 50%, #000000 100%);
+  //background: -ms-linear-gradient(top, #000000 0%, gray 50%, #000000 100%);
+  background: linear-gradient(to bottom, #000000 0%, gray 50%, #000000 100%);
   position: relative;
-  .back_s{
+  .back_s {
     width: 95%;
     height: 97vh;
     border: 0.01rem solid #8f8f8f;
     position: absolute;
-    top: 1.5vh;left: 2.5vw;
-    .back_w{
+    top: 1.5vh;
+    left: 2.5vw;
+    .back_w {
       width: 97%;
       height: 95vh;
       border: 1vw solid yellow;
       position: absolute;
-      top: 1vh;left: 1.5vw;
-      .img1{
-        width:$wid;
+      top: 1vh;
+      left: 1.5vw;
+      .img1 {
+        width: $wid;
         height: 5vh;
-        position:absolute;
-        left: 4vw;top: 2vh;
+        position: absolute;
+        left: 4vw;
+        top: 2vh;
       }
-      .img2{
-        width:$wid*1.7;
+      .img2 {
+        width: $wid*1.7;
         height: 7vh;
-        position:absolute;
-        left:26.5vw;top: 2vh;
+        position: absolute;
+        left: 26.5vw;
+        top: 2vh;
       }
-      .img3{
-        width:$wid*1.15;
+      .img3 {
+        width: $wid*1.15;
         height: 11vh;
-        position:absolute;
-        right:4vw;top: 4vw;
+        position: absolute;
+        right: 4vw;
+        top: 4vw;
       }
-      .img4{
-        width:$wid/2;
+      .img4 {
+        width: $wid/2;
         height: 17vh;
-        position:absolute;
-        left:4vw;top: 12vh;
+        position: absolute;
+        left: 4vw;
+        top: 12vh;
       }
-      .img5{
-        width:$wid*2.1;
+      .img5 {
+        width: $wid*2.1;
         height: 5vh;
         position: relative;
-        top:11vh;
-        left:19vw;
+        top: 11vh;
+        left: 19vw;
       }
-      .img6{
-         width:$wid*1.5;
-         height: 4vh;
-         position:absolute;
-         left:17vw;top:17.5vh;
-       }
-      .img7{
-        width:$wid*0.8;
+      .img6 {
+        width: $wid*1.5;
+        height: 4vh;
+        position: absolute;
+        left: 17vw;
+        top: 17.5vh;
+      }
+      .img7 {
+        width: $wid*0.8;
         height: 2vh;
-        position:absolute;
-        left:50vw;top:19vh;
+        position: absolute;
+        left: 50vw;
+        top: 19vh;
       }
-      .img8{
-        width:$wid*0.8;
-        height:21vh;
-        position:absolute;
-        left:70vw;top:15vh;
+      .img8 {
+        width: $wid*0.8;
+        height: 21vh;
+        position: absolute;
+        left: 70vw;
+        top: 15vh;
       }
-      .img9{
-        width:$wid*2.37;
+      .img9 {
+        width: $wid*2.37;
         height: 8vh;
-        position:absolute;
-        left:19vw;top:23vh;
+        position: absolute;
+        left: 19vw;
+        top: 23vh;
       }
-      .img10{
-        width:$wid*3.1;
+      .img10 {
+        width: $wid*3.1;
         height: 3vh;
-        position:absolute;
-        left:4vw;top:33vh;
+        position: absolute;
+        left: 4vw;
+        top: 33vh;
       }
-      .img11{
-        width:$wid*4.1;
+      .img11 {
+        width: $wid*4.1;
         height: 13vh;
-        position:absolute;
-        left:4vw;top:38vh;
+        position: absolute;
+        left: 4vw;
+        top: 38vh;
       }
-      .img12{
-        width:$wid*3.5;
+      .img12 {
+        width: $wid*3.5;
         height: 9vh;
-        position:absolute;
-        left:10.5vw;top:39vh;
+        position: absolute;
+        left: 10.5vw;
+        top: 39vh;
       }
-      .img13{
-        width:$wid*3.6;
+      .img13 {
+        width: $wid*3.6;
         height: 4vh;
-        position:absolute;
-        left:4vw;top:52.5vh;
+        position: absolute;
+        left: 4vw;
+        top: 52.5vh;
       }
-      .img14{
-        width:$wid/2.5;
+      .img14 {
+        width: $wid/2.5;
         height: 3vh;
-        position:absolute;
-        right:4vw;top:53vh;
+        position: absolute;
+        right: 4vw;
+        top: 53vh;
       }
-      .img15{
-        width:$wid*2.4;
+      .img15 {
+        width: $wid*2.4;
         height: 4vh;
-        position:absolute;
-        left:4vw;top:57.5vh;
+        position: absolute;
+        left: 4vw;
+        top: 57.5vh;
       }
-      .img16{
-        width:$wid*1.2;
+      .img16 {
+        width: $wid*1.2;
         height: 3vh;
-        position:absolute;
-        right:4vw;top:57.5vh;
+        position: absolute;
+        right: 4vw;
+        top: 57.5vh;
       }
-      .img17{
-        width:$wid*2.4;
+      .img17 {
+        width: $wid*2.4;
         height: 3vh;
-        position:absolute;
-        left:4vw;top:63vh;
+        position: absolute;
+        left: 4vw;
+        top: 63vh;
       }
-      .img18{
-        width:$wid*2.4;
+      .img18 {
+        width: $wid*2.4;
         height: 4vh;
-        position:absolute;
-        left:4vw;top:67vh;
+        position: absolute;
+        left: 4vw;
+        top: 67vh;
       }
-      .img19{
-        width:$wid*0.9;
+      .img19 {
+        width: $wid*0.9;
         height: 9vh;
-        position:absolute;
-        right:16vw;top:62vh;
+        position: absolute;
+        right: 16vw;
+        top: 62vh;
       }
-      .img20{
-        width:$wid*0.5;
+      .img20 {
+        width: $wid*0.5;
         height: 20vh;
-        position:absolute;
-        right:4vw;top:62.1vh;
+        position: absolute;
+        right: 4vw;
+        top: 62.1vh;
       }
-      .img21{
-        width:$wid*0.8;
+      .img21 {
+        width: $wid*0.8;
         height: 3vh;
-        position:absolute;
-        left:4vw;top:73vh;
+        position: absolute;
+        left: 4vw;
+        top: 73vh;
       }
-      .img22{
-        width:$wid*2.5;
+      .img22 {
+        width: $wid*2.5;
         height: 4vh;
-        position:absolute;
-        left:24vw;top:73vh;
+        position: absolute;
+        left: 24vw;
+        top: 73vh;
       }
-      .img23{
-         width:$wid*3.3;
-         height: 3vh;
-         position:absolute;
-         left:4vw;top:79vh;
-       }
-      .img24{
-        width:$wid*1.2;
+      .img23 {
+        width: $wid*3.3;
+        height: 3vh;
+        position: absolute;
+        left: 4vw;
+        top: 79vh;
+      }
+      .img24 {
+        width: $wid*1.2;
         height: 5vh;
-        position:absolute;
-        left:33vw;top:85vh;
+        position: absolute;
+        left: 33vw;
+        top: 85vh;
       }
-      .img_ani{
-        animation-duration:2s;
-        -webkit-animation-duration:2s;
+      .img_ani {
+        animation-duration: 1s;
+        -webkit-animation-duration: 1s;
       }
     }
   }
