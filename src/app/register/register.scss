@@ -22,12 +22,16 @@
     width: 5.2rem;
     height: 0.5rem;
     font-size: 0.5rem;
+    position: absolute;
+    left:-0.25rem;
   }
   .usee{
     display: inline-block;
     color: #fed22f;
     font-size: 0.5rem;
-    margin-left: 0.3rem;
+    //margin-left: 0.3rem;
+    position: absolute;
+    left:0.5rem;top:0.5rem;
   }
 }
 .sj{
@@ -58,7 +62,7 @@
   }
   input::-ms-input-placeholder{text-align: center;color:rgb(245,220,34);font-size: 0.2rem;}
   input::-webkit-input-placeholder{text-align: center;color:rgb(245,220,34);font-size: 0.2rem;}
-  .code{
+  .scode{
     background: rgb(65,65,65);
     border: none;
     width: 2.57rem;

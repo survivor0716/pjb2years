@@ -21,17 +21,19 @@
   width: 5.3rem;
   height: 0.88rem;
   color: white;
-  font-size: 0.18rem;
+  font-size: 0.19rem;
   border-bottom: 0.02rem dashed white;
-  .font_one{
+  .font_first{
     margin-top: 0.2rem;
     display:inline-block;
     width: 5rem;
     margin-left: 0.3rem;
+    font-size: 0.19rem;
   }
-  .font_two{
+  .font_sec{
     display:inline-block;
     width: 5.3rem;
+    font-size: 0.19rem;
   }
 }
 .card{
