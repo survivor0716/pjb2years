@@ -62,10 +62,10 @@
   }
   input::-ms-input-placeholder{text-align: center;color:rgb(245,220,34);font-size: 0.2rem;}
   input::-webkit-input-placeholder{text-align: center;color:rgb(245,220,34);font-size: 0.2rem;}
-  .scode{
-    background: rgb(65,65,65);
-    border: none;
-    width: 2.57rem;
-    height: 0.49rem;
+  .head{
+    color: rgb(65,65,65);
+    font-size: 0.33rem;
+    font-weight: 700;
+    margin-top: 0.1rem;
   }
 }
