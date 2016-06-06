@@ -1,0 +1,101 @@
+.toutu{
+  width: 5.84rem;
+  height: 3.2rem;
+}
+.biaoti{
+  width:5.3rem;
+  height: 1.22rem;
+  position: absolute;
+  left:0.27rem;
+  top:0.8rem;
+}
+.task{
+  width:2.7rem;
+  height:1.15rem;
+  position: absolute;
+  left: 1.5rem;
+  top:2.15rem;
+}
+.font_body{
+  margin-top: 0.08rem;
+  width: 5.3rem;
+  height: 0.88rem;
+  color: white;
+  font-size: 0.18rem;
+  border-bottom: 0.02rem dashed white;
+  .font_one{
+    margin-top: 0.2rem;
+    display:inline-block;
+    width: 5rem;
+    margin-left: 0.3rem;
+  }
+  .font_two{
+    display:inline-block;
+    width: 5.3rem;
+  }
+}
+.card{
+  width: 5.58rem;
+  height: 2.58rem;
+  margin-left: 0.07rem;
+  margin-top: 0.25rem;
+}
+.wx{
+  width: 1.12rem;
+  height: 1.12rem;
+  background: pink;
+  position: absolute;
+  right: 0.35rem;
+  top: 5.5rem;
+}
+.btm{
+  width: 5.3rem;
+  height: 0.64rem;
+  border-top: 0.02rem dashed white;
+  margin-top: 0.25rem;
+  .click_this{
+    height: 0.46rem;
+    display: inline-block;
+    color: #fff;
+    margin-left: 0.3rem;
+    font-size: 0.2rem;
+    margin-right: 0.2rem;
+    position: relative;
+    bottom:0.05rem;
+  }
+  .gift3{
+    width: 1.64rem;
+    height: 0.46rem;
+    background: -moz-linear-gradient(top, yellow 0%, #f0ad4e 70%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,yellow), color-stop(70%,#f0ad4e));
+    background: -webkit-linear-gradient(top, yellow 0%,#f0ad4e 70%);
+    background: -o-linear-gradient(top, yellow 0%,#f0ad4e 70%);
+    background: -ms-linear-gradient(top, yellow 0%,#f0ad4e 70%);
+    background: linear-gradient(to bottom, yellow 0%,#f0ad4e 70%);
+    border: none;
+    border-radius:0.15rem;
+    margin-top: 0.15rem;
+    font-size: 0.3rem;
+    font-weight:800;
+  }
+}
+.concern{
+  display: inline-block;
+  margin-top: 0.06rem;
+  color: yellow;
+  font-size: 0.25rem;
+  margin-left: 0.5rem;
+}
+.gets{
+  width: 2.43rem;
+  height: 0.52rem;
+  font-size: 0.3rem;
+  background: orange;
+  border: none;
+  border-radius: 0.12rem;
+  margin-top: 0.23rem;
+}
+.list{
+  margin-left: 0.25rem;
+  margin-right: 0.26rem;
+}

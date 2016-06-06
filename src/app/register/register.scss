@@ -1,0 +1,67 @@
+.gift5{
+  width: 3.22rem;
+  height: 0.64rem;
+  border: none;
+  border-radius: 0.2rem;
+  background: #fed22f;
+  font-size: 0.35rem;
+  font-weight:bolder;
+  position: absolute;
+  left:1.3rem;top: 2.2rem;
+}
+.font-use{
+  position: absolute;
+  top:3.09rem;
+  left:0.65rem;
+  width: 5rem;
+  height: 1.2rem;
+  overflow: hidden;
+  .rover{
+    display: inline-block;
+    color: white;
+    width: 5.2rem;
+    height: 0.5rem;
+    font-size: 0.5rem;
+  }
+  .usee{
+    display: inline-block;
+    color: #fed22f;
+    font-size: 0.5rem;
+    margin-left: 0.3rem;
+  }
+}
+.sj{
+  width:0;
+  height:0;
+  border-left:20px solid transparent;
+  border-right:20px solid transparent;
+  border-top:20px solid white;
+  position: absolute;
+  top: 4.55rem;
+  left:2.7rem;
+}
+.register{
+  background:rgb(245,220,34);
+  margin-top: 0.18rem;
+  width: 5.25rem;
+  height: 4.18rem;
+  position: absolute;
+  top:4.73rem;
+  left:0.25rem;
+  border-radius: 0.2rem;
+  .phone_reg{
+    display: inline-block;
+    margin-top: 0.22rem;
+    font-size: 0.3rem;
+    font-weight: bolder;
+    margin-left: 1.7rem;
+  }
+  input::-ms-input-placeholder{text-align: center;color:rgb(245,220,34);font-size: 0.2rem;}
+  input::-webkit-input-placeholder{text-align: center;color:rgb(245,220,34);font-size: 0.2rem;}
+  .code{
+    background: rgb(65,65,65);
+    border: none;
+    width: 2.57rem;
+    height: 0.49rem;
+  }
+}

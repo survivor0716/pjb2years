@@ -35,8 +35,8 @@
       (function (obj) {
         $timeout(function () {
           obj.active = true;
-          $log.debug(obj);
-          $log.debug('active = true');
+          //$log.debug(obj);
+          //$log.debug('active = true');
         }, i * 500);
       })(obj);
 
