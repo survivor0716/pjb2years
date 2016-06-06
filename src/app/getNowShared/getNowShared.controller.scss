@@ -1,0 +1,67 @@
+*{
+  color: white;
+  font-size: 0.27rem;
+  text-align: center;
+}
+::-webkit-input-placeholder{color:rgb(245,220,34);}
+::-moz-placeholder{color:rgb(245,220,34);}
+:-moz-placeholder{color:rgb(245,220,34);}
+.dj {
+  width: 6.4rem;
+  height: 10.08rem;
+  background: -moz-linear-gradient(top, #000000 0%, gray 50%, #000000 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #000000), color-stop(50%, gray), color-stop(100%, #000000));
+  background: -webkit-linear-gradient(top, #000000 0%, gray 50%, #000000 100%);
+  background: -o-linear-gradient(top, #000000 0%, gray 50%, #000000 100%);
+  background: -ms-linear-gradient(top, #000000 0%, gray 50%, #000000 100%);
+  background: linear-gradient(to bottom, #000000 0%, gray 50%, #000000 100%);
+  position: relative;
+  .bq {
+    width: 6rem;
+    height: 9.7rem;
+    border: 0.02rem solid #8f8f8f;
+    position: absolute;
+    left: 0.2rem;
+    top: 0.19rem;
+    .hq {
+      width: 5.8rem;
+      height: 9.48rem;
+      border: 0.05rem solid yellow;
+      position: absolute;
+      left: 0.066rem;
+      top: 0.1rem;
+      .dz{
+        .num{
+          background: rgb(26,26,28);
+          width: 4.8rem;
+          height: 0.77rem;
+          border:none;
+          margin-top: 2.8rem;
+        }
+        .file{
+          width: 3.43rem;
+          height: 0.61rem;
+          background: rgb(242,153,1);
+          border: none;
+          margin-top: 0.3rem;
+          border-radius: 0.1rem;
+          font-size: 0.33rem;
+        }
+        .colde1{
+          margin-top: 0.67rem;
+          color: yellow;
+          font-size: 0.3rem;
+        }
+        .colde2{
+
+        }
+        .colde3{
+          margin-top: -0.1rem;
+          span{
+            color: yellow;
+          }
+        }
+      }
+    }
+  }
+}

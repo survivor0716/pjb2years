@@ -1,0 +1,131 @@
+*{
+  color: white;
+  font-size: 0.27rem;
+  text-align: center;
+}
+::-webkit-input-placeholder{color:rgb(245,220,34);}
+::-moz-placeholder{color:rgb(245,220,34);}
+:-moz-placeholder{color:rgb(245,220,34);}
+.test {
+  width: 6.4rem;
+  height: 10.08rem;
+  background: -moz-linear-gradient(top, #000000 0%, gray 50%, #000000 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #000000), color-stop(50%, gray), color-stop(100%, #000000));
+  background: -webkit-linear-gradient(top, #000000 0%, gray 50%, #000000 100%);
+  background: -o-linear-gradient(top, #000000 0%, gray 50%, #000000 100%);
+  background: -ms-linear-gradient(top, #000000 0%, gray 50%, #000000 100%);
+  background: linear-gradient(to bottom, #000000 0%, gray 50%, #000000 100%);
+  position: relative;
+  .bx {
+    width: 6rem;
+    height: 9.7rem;
+    border: 0.02rem solid #8f8f8f;
+    position: absolute;
+    left: 0.2rem;
+    top: 0.19rem;
+    .yx {
+      width: 5.8rem;
+      height: 9.48rem;
+      border: 0.05rem solid yellow;
+      position: absolute;
+      left: 0.066rem;
+      top: 0.1rem;
+      .dole{
+        width: 5.25rem;
+        height: 2.55rem;
+        background: rgb(245,220,34);
+        position: absolute;
+        top:0.26rem;
+        left:0.21rem;
+        border-radius: 0.2rem;
+        p{
+          width: 100%;
+          text-align: center;
+          color: black;
+          line-height: 0.5rem;
+          font-size: 0.33rem;
+          position: absolute;
+          font-weight:900;
+          top:0.1rem;
+        }
+        .phonenum{
+          width: 4.9rem;
+          height: 0.5rem;
+          border: none;
+          color: rgb(245,220,34);
+          position: absolute;
+          top:0.75rem;
+          left: 0.1625rem;
+          background: black;
+        }
+        .go{
+          width: 4.9rem;
+          height: 0.5rem;
+          border: none;
+          bottom: 0.45rem;
+          color: black;
+          left: 0.1625rem;
+          position: absolute;
+          background: rgb(242,153,1);
+        }
+      }
+      .gz{
+        width: 2.04rem;
+        height: 0.62rem;
+        margin-top:3.1rem;
+        border-bottom: 0.05rem solid white;
+        .top{
+          width: 2.04rem;
+          height: 0.53rem;
+          border: 0.02rem solid white;
+          font-size: 0.35rem;
+          color: rgb(245,220,34);
+          font-weight: 900;
+        }
+      }
+      .a1{
+        width: 5.25rem;
+        height: 0.5rem;
+        border-bottom: 0.02rem dashed white;
+        margin-top: 0.1rem;
+      }
+      .a11{
+        width: 5.25rem;
+        height: 0.5rem;
+        border-bottom: 0.02rem dashed white;
+        margin-top: 0.3rem;
+      }
+      .a2{
+        width: 5.25rem;
+        height: 0.9rem;
+        border-bottom: 0.02rem dashed white;
+        .c1{
+          margin-top: 0.15rem;
+        }
+        .c2{
+          line-height: 0.2rem;
+        }
+      }
+      .a3{
+        width: 5.25rem;
+        border-bottom: 0.02rem dashed white;
+        .z1{
+          margin-top: 0.15rem;
+        }
+        .z2{
+          line-height:0.15rem;
+        }
+        .z3{
+          line-height: 0.28rem;
+        }
+        .z4{
+          line-height:0.28rem;
+        }
+      }
+      .a4{
+        width: 5.25rem;
+        padding-top: 0.15rem;
+      }
+    }
+  }
+}

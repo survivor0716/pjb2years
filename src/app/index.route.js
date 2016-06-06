@@ -17,6 +17,21 @@
         controller: 'MainController',
         controllerAs: 'main'
       })
+      .when('/rule', {
+        templateUrl: 'app/rule/rule.html',
+        controller: 'RuleController',
+        controllerAs: 'rule'
+      })
+      .when('/getNow', {
+        templateUrl: 'app/getNow/getNow.html',
+        controller: 'GetNowController',
+        controllerAs: 'getNow'
+      })
+      .when('/getNowShared', {
+        templateUrl: 'app/getNowShared/getNowShared.html',
+        controller: 'GetNowSharedController',
+        controllerAs: 'getNowShared'
+      })
       .otherwise({
         redirectTo: '/'
       });
