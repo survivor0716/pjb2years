@@ -63,6 +63,8 @@
     font-weight:900;
     top:0.1rem;
   }
+  input::-ms-input-placeholder{text-align: center;color:rgb(245,220,34);font-size: 0.2rem;}
+  input::-webkit-input-placeholder{text-align: center;color:rgb(245,220,34);font-size: 0.2rem;}
   .phonenum{
     width: 4.9rem;
     height: 0.5rem;
@@ -89,6 +91,9 @@
   height: 0.62rem;
   margin-top:3.1rem;
   border-bottom: 0.05rem solid white;
+  .actRule{
+    margin-left: 0.3rem;
+  }
   .top{
     width: 2.04rem;
     height: 0.53rem;
@@ -99,18 +104,21 @@
   }
 }
 .first_two{
+  color: #fff;
   width: 5.25rem;
   height: 0.5rem;
   border-bottom: 0.02rem dashed white;
   margin-top: 0.1rem;
 }
 .first_one{
+  color: #fff;
   width: 5.25rem;
   height: 0.5rem;
   border-bottom: 0.02rem dashed white;
   margin-top: 0.3rem;
 }
 .faone{
+  color: #fff;
   width: 5.25rem;
   height: 0.9rem;
   border-bottom: 0.02rem dashed white;
@@ -122,6 +130,7 @@
   }
 }
 .fatre{
+  color: #fff;
   width: 5.25rem;
   border-bottom: 0.02rem dashed white;
   .fatre-one{
@@ -138,6 +147,7 @@
   }
 }
 .fafor{
+  color: #fff;
   width: 5.25rem;
   padding-top: 0.15rem;
 }
