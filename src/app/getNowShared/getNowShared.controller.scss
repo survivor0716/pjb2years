@@ -37,6 +37,9 @@
           height: 0.77rem;
           border:none;
           margin-top: 2.8rem;
+          color: rgb(245,220,34);
+          input::-ms-input-placeholder{text-align: center;color:rgb(245,220,34);font-size: 0.2rem;}
+          input::-webkit-input-placeholder{text-align: center;color:rgb(245,220,34);font-size: 0.2rem;}
         }
         .file{
           width: 3.43rem;

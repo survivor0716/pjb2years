@@ -114,6 +114,8 @@
   position: absolute;
   top:-0.333rem;
   left: -0.333rem;
+  input::-ms-input-placeholder{text-align: center;color:white;font-size: 0.2rem;}
+  input::-webkit-input-placeholder{text-align: center;color:white;font-size: 0.2rem;}
   z-index: 999;
   .first-mask{
     width: 4.36rem;
