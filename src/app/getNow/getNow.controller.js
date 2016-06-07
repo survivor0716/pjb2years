@@ -13,7 +13,7 @@
     $scope.isRegister = false;
 
     $scope.login = function () {
-      var reg = /^(1[3,4,5,6,7,8]{1})+\d{9}$/;
+      var reg = /^(1[3-8]{1})+\d{9}$/;
       if (reg.test($scope.user.phone)) {
         var params = {
           phone: $scope.user.phone
@@ -36,7 +36,7 @@
       } else {
         $location.path("/register");
       }
-    }
+    };
 
     function loginSuccess(data) {
       //var data = {
