@@ -9,7 +9,20 @@
     .controller('GetSuccessController', GetSuccessController);
 
   /** @ngInject */
-  function GetSuccessController($scope, $window, $log, $timeout) {
-
+  function GetSuccessController($scope,$location, $window, $log, $timeout) {
+    $scope.disp = false;
+    $scope.myVar = '../assets/getImg/kaquan@2x.png';
+    $scope.red=function() {
+      $location.path("/list");
+    }
+    $scope.rule=function() {
+      $location.path("/rule");
+    }
+    $scope.welfare=function(){
+      $scope.disp = true;
+    }
+    $scope.closeMask=function(){
+      $scope.disp = false;
+    }
   }
 })();

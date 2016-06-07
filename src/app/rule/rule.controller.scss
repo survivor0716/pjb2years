@@ -1,88 +1,56 @@
-*{
-  color: white;
-  font-size: 0.25rem;
-  text-align: center;
-}
-.box{
-  width: 6.4rem;
-  height: 10.08rem;
-  background: -moz-linear-gradient(top, #000000 0%, gray 50%, #000000 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#000000), color-stop(50%,gray), color-stop(100%,#000000));
-  background: -webkit-linear-gradient(top, #000000 0%,gray 50%, #000000 100%);
-  background: -o-linear-gradient(top, #000000 0%,gray 50%,#000000 100%);
-  background: -ms-linear-gradient(top, #000000 0%,gray 50%,#000000 100%);
-  background: linear-gradient(to bottom, #000000 0%,gray 50%,#000000 100%);
-  position: relative;
-  .white{
-    width: 6rem;
-    height: 9.7rem;
-    border: 0.02rem solid #8f8f8f;
-    position: absolute;
-    left:0.2rem;
-    top:0.19rem;
-    .orange{
-      width: 5.8rem;
-      height: 9.48rem;
-      border: 0.05rem solid yellow;
-      position: absolute;
-      left: 0.066rem;
-      top:0.1rem;
-      .code{
-        position: absolute;
-        width: 4.2rem;
-        height: 8.45rem;
-        left:0.8rem;
-        top:0.4rem;
-        .header{
-          width: 3.26rem;
-          height: 0.8rem;
-          .lulu{
-            line-height: -0.33rem;
-            width: 3.24rem;
-            height: 0.62rem;
-            border: 0.05rem solid white;
-            border-radius: 0.1rem;
-            font-size: 0.41rem;
-            text-align: center;
-            color: yellow;
-          }
-        }
-        .qone{
-          height: 1rem;
-          margin-top: 0.45rem;
-          border-bottom: 0.01rem dashed white;
-          .qy{
-            width: 3.9rem;
-            height: 0.8rem;
-            color: white;
-          }
-        }
-        .qtwo{
-          height: 1.07rem;
-          margin-top: 0.34rem;
-          border-bottom: 0.01rem dashed white;
-          .alone{
-            width: 3.68rem;
-          }
-        }
-        .buttom{
-          height: 4.759rem;
-          .first-one{
-            margin-top: 0.35rem;
-          }
-          .first-two{
-            color: orange;
-            margin-top:0.08rem;
-          }
-          .first-tre{
-            margin-top:0.08rem;
-          }
-          .img{
-            height: 2.81rem;
-            margin-top: 0.59rem;
-          }
-        }
-      }
+.code {
+  position: absolute;
+  width: 4.2rem;
+  height: 8.45rem;
+  left: 0.8rem;
+  top: 0.4rem;
+  .header {
+    width: 3.26rem;
+    height: 0.8rem;
+    .lulu {
+      line-height: -0.33rem;
+      width: 3.24rem;
+      height: 0.62rem;
+      border: 0.05rem solid white;
+      border-radius: 0.1rem;
+      font-size: 0.41rem;
+      text-align: center;
+      color: yellow;
+    }
+  }
+  .qone {
+    height: 1rem;
+    margin-top: 0.45rem;
+    border-bottom: 0.01rem dashed white;
+    .qy {
+      width: 3.9rem;
+      height: 0.8rem;
+      color: white;
+    }
+  }
+  .qtwo {
+    height: 1.07rem;
+    margin-top: 0.34rem;
+    border-bottom: 0.01rem dashed white;
+    .alone {
+      width: 3.68rem;
+    }
+  }
+  .buttom {
+    height: 4.759rem;
+    .first-one {
+      margin-top: 0.35rem;
+    }
+    .first-two {
+      color: orange;
+      margin-top: 0.08rem;
+    }
+    .first-tre {
+      margin-top: 0.08rem;
+    }
+    .img {
+      height: 2.81rem;
+      margin-top: 0.59rem;
     }
   }
 }
