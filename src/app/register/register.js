@@ -38,7 +38,7 @@
         });
     }
     $scope.reimg=function(){
-      $scope.captcha="http://piaojubao.h5.dev.willar.net/IdentifyingPicture?random="+Math.random();;
+      $scope.captcha="http://piaojubao.h5.dev.willar.net/IdentifyingPicture?random="+Math.random();
     }
     $scope.sub=function(){
       var sub_data = {
