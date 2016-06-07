@@ -21,7 +21,7 @@ angular.module('paymewDistributor')
       return $q.reject(JSON.stringify(response));
     }
 
-    function request (url) {
+    function request(url) {
       return function (p) {
         var params = p || {};
         //$window.alert('请求参数: location: ' + JSON.stringify(params));
@@ -30,11 +30,13 @@ angular.module('paymewDistributor')
       };
     }
 
-    var url = apiConfig.isTest ? apiConfig.test_url : apiConfig.lbs_url;
+    var url = apiConfig.isDebug ? apiConfig.test_url : apiConfig.lbs_url;
 
     // Public API here
     return {
-      //demo
-      //getMExtend: request(url + apiConfig.getMExtend)
+      login       : request(url + apiConfig.login),
+      register    : request(url + apiConfig.register),
+      verification: request(url + apiConfig.verification),
+      captcha     : request(url + apiConfig.captcha)
     };
   });
