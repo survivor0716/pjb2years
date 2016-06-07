@@ -10,7 +10,7 @@
     $scope.Nowshow = false;
     $scope.isRegister = false;
     $scope.login = function () {
-      var reg = /^(1[3,4,5,6,7,8]{1})+\d{9}$/;
+      var reg = /^(1[3-8]{1})+\d{9}$/;
       if (reg.test($scope.phoneNum)) {
         var params = {
           phone: $scope.phoneNum
@@ -28,7 +28,7 @@
       } else {
         $window.alert("请输入正确的手机号");
       }
-    }
+    };
     $scope.goToSuccess = function(){
       $location.path("/register");
     }
