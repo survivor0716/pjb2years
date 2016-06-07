@@ -11,9 +11,9 @@
     $scope.isRegister = false;
     $scope.login = function () {
       var reg = /^(1[3,4,5,6,7,8]{1})+\d{9}$/;
-      if (reg.test($scope.phoneNum)) {
+      if (reg.test($scope.user.phone)) {
         var params = {
-          phone: $scope.phoneNum
+          phone: $scope.user.phone
         };
         //调用登录接口
         api.login(params)

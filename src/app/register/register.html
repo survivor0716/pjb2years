@@ -9,10 +9,10 @@
             <p class="second-lines">完成注册</p>
           </div>
           <div class="yanzheng">
-            <input class="yanzheng-left" placeholder='输&nbsp;入&nbsp;验&nbsp;证&nbsp;码' type="text">
-            <input class="yanzheng-right" type="submit" value="CCEW">
+            <input class="yanzheng-left" placeholder='输&nbsp;入&nbsp;验&nbsp;证&nbsp;码' type="text" ng-model="Identifying">
+            <img ng-src="{{captcha}}" alt="" class="yanzheng-right" ng-click="reimg()">
           </div>
-          <input type="submit" value="确&nbsp;定" class="assign">
+          <button type="button" class="assign" ng-click="sub()">确&nbsp;定</button>
         </div>
       </div>
       <img src="assets/getImg/toutu.png" alt="" class="toutu">
@@ -26,12 +26,12 @@
       <form action="post" class="register">
         <p class="head"><手&nbsp;机&nbsp;号&nbsp;注&nbsp;册></p>
         <div class="obtain">
-          <input type="text" placeholder="输&nbsp;入&nbsp;验&nbsp;证&nbsp;码" class="zuo">
-          <input type="submit" value="获取手机验证码" class="you">
+          <input type="text" placeholder="输&nbsp;入&nbsp;验&nbsp;证&nbsp;码" class="zuo" ng-model="verification">
+          <button type="button" class="you" ng-click="phoneCode()">获取手机验证码</button>
         </div>
         <input class="password" type="password" placeholder="输&nbsp;入&nbsp;密&nbsp;码" ng-model="pwd">
         <input class="again" type="password" placeholder="再&nbsp;次&nbsp;输&nbsp;入&nbsp;密&nbsp;码" ng-model="pwda">
-        <button class="more" ng-click="regis()">注册获得更多好礼</button>
+        <button type="button" class="more" ng-click="regis()">注册获得更多好礼</button>
       </form>
     </div>
   </div>
