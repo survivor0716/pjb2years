@@ -15,8 +15,7 @@
     $scope.regis=function(){
       if($scope.pwd == null){
         $window.alert("请输入密码");
-      }
-      if($scope.pwda != $scope.pwd){
+      }else if($scope.pwda != $scope.pwd){
         $window.alert("两次密码必须一致");
       }else{
         $scope.showCaptcha=true;
@@ -38,7 +37,7 @@
         });
     }
     $scope.reimg=function(){
-      $scope.captcha="http://piaojubao.h5.dev.willar.net/IdentifyingPicture?random="+Math.random();;
+      $scope.captcha="http://piaojubao.h5.dev.willar.net/IdentifyingPicture?random="+Math.random();
     }
     $scope.sub=function(){
       var sub_data = {
@@ -46,7 +45,8 @@
         verification:$scope.verification,
         password: $scope.pwd,
         Identifying:$scope.Identifying,
-        parameter:null
+        paymew:null,
+        f:null
       };
       $log.debug(sub_data);
       api.register(sub_data)
