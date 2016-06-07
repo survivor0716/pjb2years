@@ -6,6 +6,7 @@ angular.module('paymewDistributor')
     function requestSuccess(response) {
       if (typeof response.data === 'object') {
         var data = response.data;
+        $log.debug(data);
         if (!data.errCode) {
           $log.debug(data);
           return $q.resolve(data.data);
