@@ -9,7 +9,20 @@
     .controller('GetSuccessController', GetSuccessController);
 
   /** @ngInject */
-  function GetSuccessController($scope, $window, $log, $timeout) {
-
+  function GetSuccessController($scope,$location, $window, $log, $timeout) {
+    $scope.disp = false;
+    var myVar = '';
+    $scope.red=function() {
+      $location.path("/list");
+    }
+    $scope.rule=function() {
+      $location.path("/rule");
+    }
+    $scope.welfare=function(){
+      $scope.disp = true;
+    }
+    $scope.closeMask=function(){
+      $scope.disp = false;
+    }
   }
 })();
