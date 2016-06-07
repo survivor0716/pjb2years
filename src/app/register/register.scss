@@ -22,8 +22,7 @@
     width: 5.2rem;
     height: 0.5rem;
     font-size: 0.5rem;
-    position: absolute;
-    left:-0.25rem;
+    margin-left: 0.2rem;
   }
   .usee{
     display: inline-block;
@@ -46,7 +45,7 @@
 }
 .register{
   background:rgb(245,220,34);
-  margin-top: 0.18rem;
+  margin-top: 0.5rem;
   width: 5.25rem;
   height: 4.18rem;
   position: absolute;
@@ -59,10 +58,11 @@
     color: rgb(65,65,65);
     font-size: 0.33rem;
     font-weight: 700;
-    margin-top: 0.1rem;
+    margin-top: 0.2rem;
+    text-align: center;
   }
   .obtain{
-    margin-top: 0.3rem;
+    margin-top: 0.1rem;
     width: 4.85rem;
     height: 0.49rem;
     .zuo{
@@ -72,6 +72,7 @@
       background: black;
       border: none;
       color:rgb(245,220,34);
+      text-align: center;
     }
     .you{
       width: 2.16rem;
@@ -89,6 +90,8 @@
     border: none;
     background: black;
     color:rgb(245,220,34);
+    margin-left: 0.2rem;
+    text-align: center;
   }
   .again{
     margin-top: 0.3rem;
@@ -97,6 +100,8 @@
     border: none;
     background: black;
     color:rgb(245,220,34);
+    margin-left: 0.2rem;
+    text-align: center;
   }
   .more{
     margin-top: 0.3rem;
@@ -105,6 +110,8 @@
     height: 0.49rem;
     background:rgb(238,134,22);
     color:black;
+    margin-left: 0.2rem;
+    text-align: center;
   }
 }
 .mask{

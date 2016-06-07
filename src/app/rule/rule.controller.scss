@@ -26,6 +26,14 @@
       width: 3.9rem;
       height: 0.8rem;
       color: white;
+      text-align: center;
+      font-size: 0.25rem;
+    }
+    .section{
+      color: white;
+      text-align: center;
+      font-size: 0.25rem;
+      margin-top: -0.34rem;
     }
   }
   .qtwo {
@@ -34,23 +42,42 @@
     border-bottom: 0.01rem dashed white;
     .alone {
       width: 3.68rem;
+      color: white;
+      text-align: center;
+      margin-top: 0.34rem;
+      font-size: 0.25rem;
+    }
+    .secon{
+      color: white;
+      text-align: center;
+      font-size: 0.25rem;
+      margin-top: 0.14rem;
     }
   }
   .buttom {
     height: 4.759rem;
     .first-one {
       margin-top: 0.35rem;
+      text-align: center;
+      color: white;
+      font-size: 0.25rem;
     }
     .first-two {
-      color: orange;
-      margin-top: 0.08rem;
+      color: yellow;
+      margin-top: 0.14rem;
+      text-align: center;
+      font-size: 0.25rem;
     }
     .first-tre {
-      margin-top: 0.08rem;
+      margin-top: 0.14rem;
+      color: white;
+      font-size: 0.25rem;
+      text-align: center;
     }
     .img {
       height: 2.81rem;
       margin-top: 0.59rem;
+      background: red;
     }
   }
 }
