@@ -11,7 +11,7 @@
   /** @ngInject */
   function GetSuccessController($scope,$location, $window, $log, $timeout) {
     $scope.disp = false;
-    var myVar = '';
+    $scope.myVar = '../assets/getImg/kaquan@2x.png';
     $scope.red=function() {
       $location.path("/list");
     }

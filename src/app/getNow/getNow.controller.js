@@ -18,12 +18,13 @@
         var params = {
           phone: $scope.user.phone
         };
+        $log.debug(params);
         //调用登录接口
-        //api.login(params)
-        //  .then(loginSuccess, function (errMsg) {
-        //    $log.debug(errMsg);
-        //  });
-        loginSuccess();
+        api.login(params)
+          .then(loginSuccess, function (errMsg) {
+            $log.debug(errMsg);
+          });
+        //loginSuccess();
       } else {
         $window.alert("请输入正确的手机号");
       }
@@ -38,10 +39,10 @@
     }
 
     function loginSuccess(data) {
-      var data = {
-        register: true,
-        activities: false
-      }
+      //var data = {
+      //  register: true,
+      //  activities: false
+      //}
       $log.debug(data);
       $scope.Nowshow = true;
       $scope.user.register = data.register;
