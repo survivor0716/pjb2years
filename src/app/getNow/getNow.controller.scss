@@ -103,51 +103,49 @@
     font-weight: 900;
   }
 }
-.first_two{
-  color: #fff;
-  width: 5.25rem;
-  height: 0.5rem;
-  border-bottom: 0.02rem dashed white;
-  margin-top: 0.1rem;
-}
-.first_one{
-  color: #fff;
-  width: 5.25rem;
-  height: 0.5rem;
-  border-bottom: 0.02rem dashed white;
-  margin-top: 0.3rem;
-}
-.faone{
-  color: #fff;
-  width: 5.25rem;
-  height: 0.9rem;
-  border-bottom: 0.02rem dashed white;
-  .faone-one{
-    margin-top: 0.15rem;
-  }
-  .faone-two{
-    line-height: 0.2rem;
-  }
-}
-.fatre{
+.yi-zi{
   color: #fff;
   width: 5.25rem;
   border-bottom: 0.02rem dashed white;
-  .fatre-one{
-    margin-top: 0.15rem;
-  }
-  .fatre-two{
-    line-height:0.15rem;
-  }
-  .fatre-tre{
-    line-height: 0.28rem;
-  }
-  .fatre-for{
-    line-height:0.28rem;
-  }
+  margin-top: 0.4rem;
+  font-size: 0.25rem;
+  padding-top: 0.2rem;
 }
-.fafor{
+.er-zi{
   color: #fff;
   width: 5.25rem;
-  padding-top: 0.15rem;
+  border-bottom: 0.02rem dashed white;
+  font-size: 0.25rem;
+  padding-top: 0.2rem;
+}
+.san-zi{
+  width: 5.25rem;
+  border-bottom: 0.02rem dashed white;
+  font-size: 0.25rem;
+  color: white;
+  .z-one{
+    margin-top: 0.2rem;
+  }
+  .z-two{
+    margin-top: -0.2rem;
+  }
+}
+.for-zi{
+  width: 5.25rem;
+  border-bottom: 0.02rem dashed white;
+  font-size: 0.25rem;
+  color: white;
+  .z-one{
+    margin-top: 0.2rem;
+  }
+  .z-two{
+    margin-top: -0.2rem;
+  }
+;
+}
+.fiv-zi{
+  color: #fff;
+  width: 5.25rem;
+  font-size: 0.25rem;
+  padding-top: 0.2rem;
 }
