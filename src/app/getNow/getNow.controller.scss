@@ -22,9 +22,12 @@
     margin-top: 0.34rem;
     text-align: center;
   }
-  .gala_get{
+  .gala_u{
     font-size: 0.3rem;
-    margin-top: -0.5rem;
+  }
+  .gala_get{
+    margin-top: 0;
+    font-size: 0.3rem;
   }
   .gala5{
     font-size: 0.3rem;
@@ -65,7 +68,7 @@
     font-weight:900;
     top:0.1rem;
   }
-  input::-ms-input-placeholder{text-align: center;color:rgb(245,220,34);font-size: 0.2rem;}
+  input::-ms-input-placeholder{text-align: center;color:rgb(245,220,34);font-size: 0.25rem;}
   input::-webkit-input-placeholder{text-align: center;color:rgb(245,220,34);font-size: 0.2rem;}
   .phonenum{
     width: 4.9rem;
@@ -76,6 +79,8 @@
     top:0.75rem;
     left: 0.1625rem;
     background: black;
+    text-align: center;
+    font-size: 0.2rem;
   }
   .go{
     width: 4.9rem;
@@ -86,6 +91,7 @@
     left: 0.1625rem;
     position: absolute;
     background: rgb(242,153,1);
+    font-size: 0.2rem;
   }
 }
 .gz{
