@@ -1,12 +1,12 @@
 <div class="test">
   <div class="bx">
     <div class="yx">
-      <div class="mask_getNow">
+      <div class="mask_getNow" ng-show="Nowshow">
         <div class="gala">
           <span class="gala_f gala_u">恭喜您</span>
           <span class="gala_f gala_get">已成功领取</span>
           <span class="gala_f gala5">< 5 元 活 动 福 利 ></span>
-          <span class="gala_f gala_font">您 已 经 参 加 此 活 动</span>
+          <span class="gala_f gala_font" ng-show="isRegister">您 已 经 参 加 此 活 动</span>
           <button class="gala_click">确定</button>
         </div>
       </div>

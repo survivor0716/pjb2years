@@ -7,6 +7,6 @@
 
   /** @ngInject */
   function GetNowController($timeout, webDevTec, toastr) {
-    var vm = this;
+
   }
 })();
