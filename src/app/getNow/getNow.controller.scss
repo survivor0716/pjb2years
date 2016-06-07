@@ -12,6 +12,7 @@
     background: rgba(255,255,255,0.91);
     border-radius: 0.2rem;
     margin-top: 2.7rem;
+    text-align: center;
   }
   .gala_f{
     width: 4.36rem;
@@ -19,10 +20,14 @@
     color: black;
     font-weight: bolder;
     margin-top: 0.34rem;
+    text-align: center;
+  }
+  .gala_u{
+    font-size: 0.3rem;
   }
   .gala_get{
+    margin-top: 0;
     font-size: 0.3rem;
-    margin-top: -0.5rem;
   }
   .gala5{
     font-size: 0.3rem;
@@ -63,6 +68,8 @@
     font-weight:900;
     top:0.1rem;
   }
+  input::-ms-input-placeholder{text-align: center;color:rgb(245,220,34);font-size: 0.25rem;}
+  input::-webkit-input-placeholder{text-align: center;color:rgb(245,220,34);font-size: 0.2rem;}
   .phonenum{
     width: 4.9rem;
     height: 0.5rem;
@@ -72,6 +79,8 @@
     top:0.75rem;
     left: 0.1625rem;
     background: black;
+    text-align: center;
+    font-size: 0.2rem;
   }
   .go{
     width: 4.9rem;
@@ -82,6 +91,7 @@
     left: 0.1625rem;
     position: absolute;
     background: rgb(242,153,1);
+    font-size: 0.2rem;
   }
 }
 .gz{
@@ -89,6 +99,9 @@
   height: 0.62rem;
   margin-top:3.1rem;
   border-bottom: 0.05rem solid white;
+  .actRule{
+    margin-left: 0.3rem;
+  }
   .top{
     width: 2.04rem;
     height: 0.53rem;
@@ -98,46 +111,49 @@
     font-weight: 900;
   }
 }
-.first_two{
-  width: 5.25rem;
-  height: 0.5rem;
-  border-bottom: 0.02rem dashed white;
-  margin-top: 0.1rem;
-}
-.first_one{
-  width: 5.25rem;
-  height: 0.5rem;
-  border-bottom: 0.02rem dashed white;
-  margin-top: 0.3rem;
-}
-.faone{
-  width: 5.25rem;
-  height: 0.9rem;
-  border-bottom: 0.02rem dashed white;
-  .faone-one{
-    margin-top: 0.15rem;
-  }
-  .faone-two{
-    line-height: 0.2rem;
-  }
-}
-.fatre{
+.yi-zi{
+  color: #fff;
   width: 5.25rem;
   border-bottom: 0.02rem dashed white;
-  .fatre-one{
-    margin-top: 0.15rem;
+  margin-top: 0.4rem;
+  font-size: 0.25rem;
+  padding-top: 0.2rem;
+}
+.er-zi{
+  color: #fff;
+  width: 5.25rem;
+  border-bottom: 0.02rem dashed white;
+  font-size: 0.25rem;
+  padding-top: 0.2rem;
+}
+.san-zi{
+  width: 5.25rem;
+  border-bottom: 0.02rem dashed white;
+  font-size: 0.25rem;
+  color: white;
+  .z-one{
+    margin-top: 0.2rem;
   }
-  .fatre-two{
-    line-height:0.15rem;
-  }
-  .fatre-tre{
-    line-height: 0.28rem;
-  }
-  .fatre-for{
-    line-height:0.28rem;
+  .z-two{
+    margin-top: -0.2rem;
   }
 }
-.fafor{
+.for-zi{
   width: 5.25rem;
-  padding-top: 0.15rem;
+  border-bottom: 0.02rem dashed white;
+  font-size: 0.25rem;
+  color: white;
+  .z-one{
+    margin-top: 0.2rem;
+  }
+  .z-two{
+    margin-top: -0.2rem;
+  }
+;
+}
+.fiv-zi{
+  color: #fff;
+  width: 5.25rem;
+  font-size: 0.25rem;
+  padding-top: 0.2rem;
 }

@@ -1,9 +1,8 @@
 .check{
   width:3.23rem;
   height:0.76rem;
-  position: absolute;
-  top: 1rem;
-  left:1.25rem;
+  margin-top: 1rem;
+  margin-left: 1.25rem;
 }
 .gift_list{
   width:4rem;
@@ -13,9 +12,7 @@
   list-style: none;
   color: white;
   font-size: 0.3rem;
-  position: absolute;
-  top:2.2rem;
-  left:0.85rem;
+  margin-top: 0.5rem;
   overflow: hidden;
   li{
     margin-left: 0.22rem;
@@ -25,8 +22,9 @@
     border-bottom: 0.02rem dashed white;
   }
 }
-.logo{
-  position: absolute;
-  top:7.75rem;
-  left:2rem;
+.bottomlogo{
+  width:1.61rem;
+  height: 0.55rem;
+  margin-top: 0.5rem;
+  margin-left: 2rem;
 }

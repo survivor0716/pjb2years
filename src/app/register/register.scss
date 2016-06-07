@@ -1,3 +1,6 @@
+.toutu1{
+  width: 5.7rem;
+}
 .gift5{
   width: 3.22rem;
   height: 0.64rem;
@@ -10,48 +13,38 @@
   left:1.3rem;top: 2.2rem;
 }
 .font-use{
-  position: absolute;
-  top:3.09rem;
-  left:0.65rem;
   width: 5rem;
   height: 1.2rem;
-  overflow: hidden;
   .rover{
     display: inline-block;
     color: white;
     width: 5.2rem;
     height: 0.5rem;
     font-size: 0.5rem;
-    position: absolute;
-    left:-0.25rem;
+    text-align: center;
+    width: 100%;
   }
   .usee{
     display: inline-block;
+    width: 100%;
     color: #fed22f;
     font-size: 0.5rem;
-    //margin-left: 0.3rem;
-    position: absolute;
-    left:0.5rem;top:0.5rem;
+    text-align: center;
   }
 }
 .sj{
   width:0;
   height:0;
-  border-left:20px solid transparent;
-  border-right:20px solid transparent;
-  border-top:20px solid white;
-  position: absolute;
-  top: 4.55rem;
-  left:2.7rem;
+  border-left:0.2rem solid transparent;
+  border-right:0.2rem solid transparent;
+  border-top:0.2rem solid white;
+  margin-top: 0.3rem;
 }
 .register{
   background:rgb(245,220,34);
-  margin-top: 0.18rem;
+  margin-top: 0.2rem;
   width: 5.25rem;
   height: 4.18rem;
-  position: absolute;
-  top:4.73rem;
-  left:0.25rem;
   border-radius: 0.2rem;
   input::-ms-input-placeholder{text-align: center;color:rgb(245,220,34);font-size: 0.2rem;}
   input::-webkit-input-placeholder{text-align: center;color:rgb(245,220,34);font-size: 0.2rem;}
@@ -59,10 +52,11 @@
     color: rgb(65,65,65);
     font-size: 0.33rem;
     font-weight: 700;
-    margin-top: 0.1rem;
+    margin-top: 0.2rem;
+    text-align: center;
   }
   .obtain{
-    margin-top: 0.3rem;
+    margin-top: 0.1rem;
     width: 4.85rem;
     height: 0.49rem;
     .zuo{
@@ -72,6 +66,7 @@
       background: black;
       border: none;
       color:rgb(245,220,34);
+      text-align: center;
     }
     .you{
       width: 2.16rem;
@@ -80,6 +75,7 @@
       border: none;
       color: black;
       background: rgb(238,134,22);
+      font-size: 0.23rem;
     }
   }
   .password{
@@ -89,6 +85,8 @@
     border: none;
     background: black;
     color:rgb(245,220,34);
+    margin-left: 0.2rem;
+    text-align: center;
   }
   .again{
     margin-top: 0.3rem;
@@ -97,6 +95,8 @@
     border: none;
     background: black;
     color:rgb(245,220,34);
+    margin-left: 0.2rem;
+    text-align: center;
   }
   .more{
     margin-top: 0.3rem;
@@ -105,17 +105,20 @@
     height: 0.49rem;
     background:rgb(238,134,22);
     color:black;
+    margin-left: 0.2rem;
+    text-align: center;
+    font-size: 0.23rem;
   }
 }
 .mask{
   width: 6.4rem;
-  height: 10.08rem;
+  height: 108%;
   background: rgba(0,0,0,0.8);
   position: absolute;
   top:-0.333rem;
   left: -0.333rem;
-  input::-ms-input-placeholder{text-align: center;color:white;font-size: 0.2rem;}
-  input::-webkit-input-placeholder{text-align: center;color:white;font-size: 0.2rem;}
+  input::-ms-input-placeholder{text-align: center;color:white;font-size: 0.23rem;}
+  input::-webkit-input-placeholder{text-align: center;color:white;font-size: 0.23rem;}
   z-index: 999;
   .first-mask{
     width: 4.36rem;
@@ -130,10 +133,12 @@
         color: black;
         font-size: 0.38rem;
         line-height: 1rem;
+        text-align: center;
       }
       .second-lines{
         color: black;
         font-size: 0.38rem;margin-top: -0.5rem;
+        text-align: center;
       }
     }
     .yanzheng{
@@ -152,6 +157,7 @@
         height: 0.49rem;
         background: orange;
         color: black;
+        float: right;
       }
     }
     .assign{
@@ -161,6 +167,7 @@
       color: black;
       border-radius: 0.2rem;
       border: none;
+      margin-left: 1.34rem;
       font-size: 0.38rem;
       margin-top: 0.32rem;
     }
