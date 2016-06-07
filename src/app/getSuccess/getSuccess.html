@@ -1,7 +1,7 @@
 <div class="bg">
   <div class="bgs">
     <div class="bgw">
-      <div class="mask">
+      <div class="mask" ng-show="disp" ng-click="closeMask()">
         <img class="first-background" src="assets/images/2.png">
         <img class="Second-background" src="assets/images/1.png">
       </div>
@@ -16,15 +16,14 @@
           邀请好友注册可得2元分享福利,至多可获得4名好友的注册奖励
         </span>
       </div>
-      <img src="assets/getImg/kaquan@2x.png" alt="" class="card">
-      <div class="wx"></div>
+      <img ng-src="{{myVar}}" class="card">
       <div class="btm">
         <span class="click_this">②点击此处</span>
-        <button class="gift3">3元福利</button>
+        <button class="gift3" ng-click="welfare()">3元福利</button>
       </div>
       <span class="concern">关注票据宝官方微信账号再得3元福利</span>
-      <button class="gets list">查看红包榜单</button>
-      <button class="gets rule">红包使用规则</button>
+      <button class="gets list" ng-click="red()">查看红包榜单</button>
+      <button class="gets rule" ng-click="rule()">红包使用规则</button>
     </div>
   </div>
 </div>
