@@ -7,13 +7,13 @@
           <span class="gala_f gala_get">已成功领取</span>
           <span class="gala_f gala5">< 5 元 活 动 福 利 ></span>
           <span class="gala_f gala_font" ng-show="isRegister">您 已 经 参 加 此 活 动</span>
-          <button class="gala_click">确定</button>
+          <button class="gala_click" ng-click="goToSuccess()">确定</button>
         </div>
       </div>
       <div class="dole">
         <p><马上领取></p>
-        <input class="phonenum" placeholder="&nbsp;输&nbsp;入&nbsp;手&nbsp;机&nbsp;号" type="text">
-        <input class="go" type="submit" value="&nbsp;领&nbsp;取&nbsp;福&nbsp;利&nbsp;">
+        <input class="phonenum" placeholder="&nbsp;输&nbsp;入&nbsp;手&nbsp;机&nbsp;号" type="text" ng-model="phoneNum">
+        <button class="go" ng-click="login()">&nbsp;领&nbsp;取&nbsp;福&nbsp;利&nbsp</button>
       </div>
       <div class="gz">
         <div class="top">

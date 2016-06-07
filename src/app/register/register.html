@@ -2,7 +2,7 @@
 <div class="bg">
   <div class="bgs">
     <div class="bgw">
-      <div class="mask">
+      <div class="mask" ng-show="showCaptcha">
         <div class="first-mask">
           <div class="words">
             <p class="first-lines">输入验证码</p>
@@ -29,9 +29,9 @@
           <input type="text" placeholder="输&nbsp;入&nbsp;验&nbsp;证&nbsp;码" class="zuo">
           <input type="submit" value="获取手机验证码" class="you">
         </div>
-        <input class="password" placeholder="输&nbsp;入&nbsp;密&nbsp;码" type="text">
-        <input class="again" type="text" placeholder="再&nbsp;次&nbsp;输&nbsp;入&nbsp;密&nbsp;码">
-        <input class="more" type="text" value='注册获得更多好礼'>
+        <input class="password" type="password" placeholder="输&nbsp;入&nbsp;密&nbsp;码" ng-model="pwd">
+        <input class="again" type="password" placeholder="再&nbsp;次&nbsp;输&nbsp;入&nbsp;密&nbsp;码" ng-model="pwda">
+        <button class="more" ng-click="regis()">注册获得更多好礼</button>
       </form>
     </div>
   </div>
