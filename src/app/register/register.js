@@ -15,8 +15,7 @@
     $scope.regis=function(){
       if($scope.pwd == null){
         $window.alert("请输入密码");
-      }
-      if($scope.pwda != $scope.pwd){
+      }else if($scope.pwda != $scope.pwd){
         $window.alert("两次密码必须一致");
       }else{
         $scope.showCaptcha=true;
@@ -46,7 +45,8 @@
         verification:$scope.verification,
         password: $scope.pwd,
         Identifying:$scope.Identifying,
-        parameter:null
+        paymew:null,
+        f:null
       };
       $log.debug(sub_data);
       api.register(sub_data)

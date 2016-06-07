@@ -21,11 +21,12 @@ angular.module('paymewDistributor')
       return $q.reject(JSON.stringify(response));
     }
 
-    function request(url) {
+    function request(url, obj) {
+      var obj = obj || {};
       return function (p) {
         var params = p || {};
         //$window.alert('请求参数: location: ' + JSON.stringify(params));
-        return $http.post(url, params)
+        return $http.post(url, params, obj)
           .then(requestSuccess, requestFail);
       };
     }
@@ -35,7 +36,7 @@ angular.module('paymewDistributor')
     // Public API here
     return {
       login       : request(url + apiConfig.login),
-      register    : request(url + apiConfig.register),
+      register    : request(url + apiConfig.register, {withCredentials: true}),
       verification: request(url + apiConfig.verification),
       captcha     : request(url + apiConfig.captcha)
     };
