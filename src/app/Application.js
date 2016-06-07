@@ -9,10 +9,15 @@
     .controller('ApplicationController', ApplicationController);
 
   /** @ngInject */
-  function ApplicationController($scope, $window, $log, $timeout,$location,api) {
-    $scope.user={
-      phone:null,
-      parameter:null,
+  function ApplicationController($scope, $window, $log, $location) {
+    var paymew = $location.search().paymew||"";
+    var f = $location.search().f||"";
+    $scope.user = {
+      phone: null,
+
+      paymew: paymew,
+      f: f
     }
+    $log.debug($scope.user);
   }
 })();
