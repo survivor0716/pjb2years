@@ -22,12 +22,16 @@
     width: 5.2rem;
     height: 0.5rem;
     font-size: 0.5rem;
+    position: absolute;
+    left:-0.25rem;
   }
   .usee{
     display: inline-block;
     color: #fed22f;
     font-size: 0.5rem;
-    margin-left: 0.3rem;
+    //margin-left: 0.3rem;
+    position: absolute;
+    left:0.5rem;top:0.5rem;
   }
 }
 .sj{
@@ -56,5 +60,107 @@
     font-size: 0.33rem;
     font-weight: 700;
     margin-top: 0.1rem;
+  }
+  .obtain{
+    margin-top: 0.3rem;
+    width: 4.85rem;
+    height: 0.49rem;
+    .zuo{
+      width: 2.57rem;
+      height: 0.49rem;
+      float: left;
+      background: black;
+      border: none;
+      color:rgb(245,220,34);
+    }
+    .you{
+      width: 2.16rem;
+      height: 0.49rem;
+      float: right;
+      border: none;
+      color: black;
+      background: rgb(238,134,22);
+    }
+  }
+  .password{
+    margin-top: 0.3rem;
+    width: 4.85rem;
+    height: 0.49rem;
+    border: none;
+    background: black;
+    color:rgb(245,220,34);
+  }
+  .again{
+    margin-top: 0.3rem;
+    width: 4.85rem;
+    height: 0.49rem;
+    border: none;
+    background: black;
+    color:rgb(245,220,34);
+  }
+  .more{
+    margin-top: 0.3rem;
+    border: none;
+    width: 4.85rem;
+    height: 0.49rem;
+    background:rgb(238,134,22);
+    color:black;
+  }
+}
+.mask{
+  width: 6.4rem;
+  height: 10.08rem;
+  background: rgba(0,0,0,0.8);
+  position: absolute;
+  top:-0.333rem;
+  left: -0.333rem;
+  z-index: 999;
+  .first-mask{
+    width: 4.36rem;
+    height: 2.98rem;
+    border-radius: 0.2rem;
+    background: rgba(255,255,255,0.8);
+    margin-top:3rem;
+    .words{
+      width: 4.36rem;
+      height: 1.28rem;
+      .first-lines{
+        color: black;
+        font-size: 0.38rem;
+        line-height: 1rem;
+      }
+      .second-lines{
+        color: black;
+        font-size: 0.38rem;margin-top: -0.5rem;
+      }
+    }
+    .yanzheng{
+      width: 3.96rem;
+      height:.49rem;
+      .yanzheng-left{
+        width: 2.57rem;
+        height: 0.49rem;
+        float: left;
+        border: none;
+        background: black;
+      }
+      .yanzheng-right{
+        border: none;
+        width: 1.24rem;
+        height: 0.49rem;
+        background: orange;
+        color: black;
+      }
+    }
+    .assign{
+      width: 1.68rem;
+      height: 0.58rem;
+      background: orange;
+      color: black;
+      border-radius: 0.2rem;
+      border: none;
+      font-size: 0.38rem;
+      margin-top: 0.32rem;
+    }
   }
 }

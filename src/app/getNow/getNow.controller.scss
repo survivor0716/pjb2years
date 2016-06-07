@@ -30,6 +30,53 @@
       position: absolute;
       left: 0.066rem;
       top: 0.1rem;
+      .mask_getNow{
+        width: 6.4rem;
+        height: 10.08rem;
+        background: rgba(0,0,0,0.6);
+        position: absolute;
+        left:-0.34rem;
+        top:-0.35rem;
+        z-index: 999;
+        .gala{
+          width:4.36rem;
+          height: 2.98rem;
+          background: rgba(255,255,255,0.91);
+          border-radius: 0.2rem;
+          margin-top: 2.7rem;
+        }
+        .gala_f{
+          width: 4.36rem;
+          display: inline-block;
+          color: black;
+          font-weight: bolder;
+          margin-top: 0.34rem;
+        }
+        .gala_get{
+          font-size: 0.3rem;
+          margin-top: -0.5rem;
+        }
+        .gala5{
+          font-size: 0.3rem;
+          margin-top: 0.06rem;
+          color: rgb(141,32,22);
+        }
+        .gala_font{
+          font-size: 0.15rem;
+          margin-top: 0.18rem;
+          color: gray;
+        }
+        .gala_click{
+          margin-top: 0.18rem;
+          width: 1.68rem;
+          height: 0.58rem;
+          color: #000;
+          background:orange;
+          border: none;
+          border-radius: 0.2rem;
+          font-size: 0.35rem;
+        }
+      }
       .dole{
         width: 5.25rem;
         height: 2.55rem;
@@ -99,26 +146,26 @@
         width: 5.25rem;
         height: 0.9rem;
         border-bottom: 0.02rem dashed white;
-        .fcone{
+        .faone-one{
           margin-top: 0.15rem;
         }
-        .fctwo{
+        .faone-two{
           line-height: 0.2rem;
         }
       }
       .fatre{
         width: 5.25rem;
         border-bottom: 0.02rem dashed white;
-        .fzone{
+        .fatre-one{
           margin-top: 0.15rem;
         }
-        .fztwo{
+        .fatre-two{
           line-height:0.15rem;
         }
-        .fztre{
+        .fatre-tre{
           line-height: 0.28rem;
         }
-        .fzfor{
+        .fatre-for{
           line-height:0.28rem;
         }
       }

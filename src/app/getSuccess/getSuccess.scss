@@ -21,17 +21,19 @@
   width: 5.3rem;
   height: 0.88rem;
   color: white;
-  font-size: 0.18rem;
+  font-size: 0.19rem;
   border-bottom: 0.02rem dashed white;
-  .font_one{
+  .font_first{
     margin-top: 0.2rem;
     display:inline-block;
     width: 5rem;
     margin-left: 0.3rem;
+    font-size: 0.19rem;
   }
-  .font_two{
+  .font_sec{
     display:inline-block;
     width: 5.3rem;
+    font-size: 0.19rem;
   }
 }
 .card{
@@ -98,4 +100,13 @@
 .list{
   margin-left: 0.25rem;
   margin-right: 0.26rem;
+}
+.mask {
+  width: 6.4rem;
+  height: 10.08rem;
+  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: -0.333rem;
+  left: -0.333rem;
+  z-index: 999;
 }
