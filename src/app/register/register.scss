@@ -115,8 +115,8 @@
   height: 108%;
   background: rgba(0,0,0,0.8);
   position: absolute;
-  top:-0.333rem;
-  left: -0.333rem;
+  top:0;
+  left: 0;
   input::-ms-input-placeholder{text-align: center;color:white;font-size: 0.23rem;}
   input::-webkit-input-placeholder{text-align: center;color:white;font-size: 0.23rem;}
   z-index: 999;
