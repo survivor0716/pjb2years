@@ -57,6 +57,7 @@
           }
         }, function (errMsg) {
           $log.debug(errMsg);
+          $scope.showCaptcha=false;
           //$window.alert(errMsg);
         });
     }
