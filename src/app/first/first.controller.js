@@ -9,8 +9,11 @@
     .controller('FirstController', FirstController);
 
   /** @ngInject */
-  function FirstController($scope, $window, $log, $timeout) {
+  function FirstController($scope, $window, $log, $timeout,$location) {
 
+    $scope.tosec=function(){
+      $location.path("/home");
+    }
 
 
   }

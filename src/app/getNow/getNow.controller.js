@@ -48,6 +48,7 @@
       $scope.Nowshow = true;
       $scope.user.register = data.register;
       $scope.user.Qrcode = data.Qrcode;
+      $scope.user.getMoney=data.getMoney;
       $scope.user.activities = data.activities;
       if (!$scope.user.register) {//如果是新用户的话
 
