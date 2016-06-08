@@ -52,6 +52,13 @@ body {
   background:url("../assets/getImg/toutu.png") no-repeat;
   background-size: 100% 100%;
 }
+.money{
+  color: #a40000;
+  font-size: 0.7rem;
+  position: absolute;
+  top: 1.23rem;
+  left: 2.4rem;
+}
 /**
  *  Do not remove the comments below. It's the markers used by gulp-inject to inject
  *  all your sass files automatically
