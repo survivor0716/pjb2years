@@ -1,18 +1,17 @@
-
 <div class="bg">
   <div class="bgs">
     <div class="bgw">
       <div class="mask" ng-show="showCaptcha">
         <div class="first-mask">
           <div class="words">
-            <p class="first-lines">输入验证码</p>
-            <p class="second-lines">完成注册</p>
+            <p class="first-lines css3cf8ab84161ab">输入验证码</p>
+            <p class="second-lines css3cf8ab84161ab">完成注册</p>
           </div>
           <div class="yanzheng">
-            <input class="yanzheng-left" placeholder='输&nbsp;入&nbsp;验&nbsp;证&nbsp;码' type="text" ng-model="Identifying">
+            <input class="yanzheng-left" placeholder='输入验证码' type="text" ng-model="Identifying">
             <img ng-src="{{captcha}}" alt="" class="yanzheng-right" ng-click="reimg()">
           </div>
-          <button type="button" class="assign" ng-click="sub()">确&nbsp;定</button>
+          <button type="button" class="assign" ng-click="sub()">确定</button>
         </div>
       </div>
       <div class="toutu">
@@ -26,13 +25,13 @@
       </div>
       <div class="sj"></div>
       <form action="post" class="register">
-        <p class="head css3cf8ab84161ab"><手&nbsp;机&nbsp;号&nbsp;注&nbsp;册></p>
+        <p class="head css3cf8ab84161ab"><手机号注册></p>
         <div class="obtain">
-          <input type="text" placeholder="输&nbsp;入&nbsp;验&nbsp;证&nbsp;码" class="zuo" ng-model="verification">
+          <input type="text" placeholder="输入验证码" class="zuo" ng-model="verification">
           <button type="button" class="you" ng-click="phoneCode()">获取手机验证码</button>
         </div>
-        <input class="password" type="password" placeholder="输&nbsp;入&nbsp;密&nbsp;码" ng-model="pwd">
-        <input class="again" type="password" placeholder="再&nbsp;次&nbsp;输&nbsp;入&nbsp;密&nbsp;码" ng-model="pwda">
+        <input class="password" type="password" placeholder="输入密码" ng-model="pwd">
+        <input class="again" type="password" placeholder="再次输入密码" ng-model="pwda">
         <button type="button" class="more" ng-click="regis()">注册获得更多好礼</button>
       </form>
     </div>
