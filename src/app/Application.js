@@ -17,7 +17,7 @@
 
       paymew: paymew,
       f: f
-    }
+    };
     $log.debug($scope.user);
   }
 })();

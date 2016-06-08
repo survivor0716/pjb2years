@@ -54,19 +54,16 @@
   width: 5.25rem;
   height: 2.55rem;
   background: rgb(245,220,34);
-  position: absolute;
-  top:0.26rem;
-  left:0.21rem;
+  margin-top: 0.26rem;
   border-radius: 0.2rem;
   p{
     width: 100%;
     text-align: center;
     color: black;
+    padding-top: 0.1rem;
     line-height: 0.5rem;
-    font-size: 0.33rem;
-    position: absolute;
+    font-size: 0.35rem;
     font-weight:900;
-    top:0.1rem;
   }
   input::-ms-input-placeholder{text-align: center;color:rgb(245,220,34);font-size: 0.25rem;}
   input::-webkit-input-placeholder{text-align: center;color:rgb(245,220,34);font-size: 0.2rem;}
@@ -75,9 +72,8 @@
     height: 0.5rem;
     border: none;
     color: rgb(245,220,34);
-    position: absolute;
-    top:0.75rem;
-    left: 0.1625rem;
+    margin-top:-0.1rem;
+    margin-left: 0.1625rem;
     background: black;
     text-align: center;
     font-size: 0.2rem;
@@ -88,8 +84,8 @@
     border: none;
     bottom: 0.45rem;
     color: black;
-    left: 0.1625rem;
-    position: absolute;
+    margin-top: 0.4rem;
+    margin-left: 0.1625rem;
     background: rgb(242,153,1);
     font-size: 0.2rem;
   }
@@ -97,7 +93,7 @@
 .gz{
   width: 2.04rem;
   height: 0.62rem;
-  margin-top:3.1rem;
+  margin-top:0.5rem;
   border-bottom: 0.05rem solid white;
   .actRule{
     margin-left: 0.3rem;
