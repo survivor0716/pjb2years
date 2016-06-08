@@ -52,9 +52,9 @@
       api.register(sub_data)
         .then(function (data) {
           $log.debug(data);
-          //if (data.register == false) {
-          //  $scope.Nowshow = true;
-          //}
+          if (data.register == true) {
+            $location.path("/getSuccess");
+          }
         }, function (errMsg) {
           $log.debug(errMsg);
           //$window.alert(errMsg);

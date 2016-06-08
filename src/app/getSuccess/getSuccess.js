@@ -10,8 +10,9 @@
 
   /** @ngInject */
   function GetSuccessController($scope,$location, $window, $log, $timeout) {
+    $log.debug($scope.user.Qrcode);
     $scope.disp = false;
-    $scope.myVar = '../assets/getImg/kaquan@2x.png';
+    $scope.myVar = $scope.user.Qrcode;
     $scope.red=function() {
       $location.path("/list");
     }

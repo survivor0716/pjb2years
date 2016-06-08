@@ -42,7 +42,11 @@
           height: 0.55rem;
           margin-top: 1rem;
           margin-left: 1.7rem;
-      }
+        }
+        .img_ani{
+          animation-duration:2s;
+          -webkit-animation-duration:2s;
+        }
       }
     }
   }

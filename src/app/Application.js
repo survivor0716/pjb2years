@@ -14,7 +14,7 @@
     var f = $location.search().f||"";
     $scope.user = {
       phone: null,
-
+      Qrcode:null,
       paymew: paymew,
       f: f
     };

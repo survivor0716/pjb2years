@@ -32,6 +32,7 @@
 
     $scope.goToSuccess = function () {
       if ($scope.user.register) {
+        $log.debug($scope.user.Qrcode);
         $location.path("/getSuccess");
       } else {
         $location.path("/register");
@@ -46,6 +47,7 @@
       $log.debug(data);
       $scope.Nowshow = true;
       $scope.user.register = data.register;
+      $scope.user.Qrcode = data.Qrcode;
       $scope.user.activities = data.activities;
       if (!$scope.user.register) {//如果是新用户的话
 
