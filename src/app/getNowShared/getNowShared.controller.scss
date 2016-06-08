@@ -8,6 +8,7 @@
     margin-left: 0.5rem;
     color: rgb(245,220,34);
     text-align: center;
+    letter-spacing:0.05rem;
   }
   input::-ms-input-placeholder{text-align: center;color:rgb(245,220,34);font-size: 0.3rem;}
   input::-webkit-input-placeholder{text-align: center;color:rgb(245,220,34);font-size: 0.3rem;}
@@ -21,12 +22,14 @@
     font-size: 0.33rem;
     margin-left: 1.25rem;
     color: #fff;
+    letter-spacing:0.05rem;
   }
   .click{
     margin-top: 0.67rem;
     color: yellow;
     font-size: 0.3rem;
     text-align: center;
+    letter-spacing:0.05rem;
   }
   .onetime{
     color: #fff;
