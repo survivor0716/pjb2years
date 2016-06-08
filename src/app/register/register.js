@@ -52,9 +52,10 @@
       api.register(sub_data)
         .then(function (data) {
           $log.debug(data);
-          if (data.register == true) {
-            $location.path("/getSuccess");
-          }
+          $scope.user.register = data.register;
+          $scope.user.Qrcode = data.Qrcode;
+          $scope.user.getMoney = data.getMoney;
+          $location.path('/getSuccess');
         }, function (errMsg) {
           $log.debug(errMsg);
           //$window.alert(errMsg);
