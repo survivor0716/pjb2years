@@ -18,40 +18,14 @@
     }
   }
   .qone {
-    height: 1rem;
     margin-top: 0.45rem;
     border-bottom: 0.01rem dashed white;
-    .qy {
-      width: 3.9rem;
-      height: 0.8rem;
-      color: white;
-      text-align: center;
-      font-size: 0.25rem;
-    }
-    .section{
-      color: white;
-      text-align: center;
-      font-size: 0.25rem;
-      margin-top: -0.34rem;
-    }
-  }
-  .qtwo {
-    height: 1.07rem;
-    margin-top: 0.34rem;
-    border-bottom: 0.01rem dashed white;
-    .alone {
-      width: 3.68rem;
-      color: white;
-      text-align: center;
-      margin-top: 0.34rem;
-      font-size: 0.25rem;
-    }
-    .secon{
-      color: white;
-      text-align: center;
-      font-size: 0.25rem;
-      margin-top: 0.14rem;
-    }
+    width: 3.9rem;
+    color: white;
+    text-align: center;
+    line-height: 0.45rem;
+    font-size: 0.25rem;
+    padding-bottom: 0.2rem;
   }
   .buttom {
     height: 4.759rem;
@@ -66,6 +40,7 @@
       margin-top: 0.14rem;
       text-align: center;
       font-size: 0.25rem;
+      letter-spacing:0.05rem;
     }
     .first-tre {
       margin-top: 0.14rem;

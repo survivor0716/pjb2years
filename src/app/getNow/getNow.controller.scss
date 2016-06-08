@@ -1,10 +1,10 @@
 .mask_getNow{
   width: 6.4rem;
-  height: 10.08rem;
-  background: rgba(0,0,0,0.6);
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
   position: absolute;
-  left:-0.34rem;
-  top:-0.35rem;
+  left: -0.34rem;
+  top: -0.35rem;
   z-index: 999;
   .gala{
     width:4.36rem;
@@ -21,6 +21,7 @@
     font-weight: bolder;
     margin-top: 0.34rem;
     text-align: center;
+    letter-spacing:0.05rem;
   }
   .gala_u{
     font-size: 0.3rem;
@@ -28,6 +29,7 @@
   .gala_get{
     margin-top: 0;
     font-size: 0.3rem;
+
   }
   .gala5{
     font-size: 0.3rem;
@@ -64,6 +66,7 @@
     line-height: 0.5rem;
     font-size: 0.35rem;
     font-weight:900;
+    letter-spacing:0.05rem;
   }
   input::-ms-input-placeholder{text-align: center;color:rgb(245,220,34);font-size: 0.25rem;}
   input::-webkit-input-placeholder{text-align: center;color:rgb(245,220,34);font-size: 0.2rem;}
@@ -77,6 +80,7 @@
     background: black;
     text-align: center;
     font-size: 0.2rem;
+    letter-spacing:0.05rem;
   }
   .go{
     width: 4.9rem;
@@ -88,6 +92,7 @@
     margin-left: 0.1625rem;
     background: rgb(242,153,1);
     font-size: 0.2rem;
+    letter-spacing:0.05rem;
   }
 }
 .gz{
@@ -96,7 +101,9 @@
   margin-top:0.5rem;
   border-bottom: 0.05rem solid white;
   .actRule{
-    margin-left: 0.3rem;
+    margin-left: 0.2rem;
+    margin-top:-0.02rem;
+    letter-spacing:0.05rem;
   }
   .top{
     width: 2.04rem;
@@ -107,49 +114,24 @@
     font-weight: 900;
   }
 }
-.yi-zi{
-  color: #fff;
-  width: 5.25rem;
-  border-bottom: 0.02rem dashed white;
-  margin-top: 0.4rem;
-  font-size: 0.25rem;
-  padding-top: 0.2rem;
-}
-.er-zi{
-  color: #fff;
-  width: 5.25rem;
-  border-bottom: 0.02rem dashed white;
-  font-size: 0.25rem;
-  padding-top: 0.2rem;
-}
-.san-zi{
-  width: 5.25rem;
-  border-bottom: 0.02rem dashed white;
-  font-size: 0.25rem;
-  color: white;
-  .z-one{
+.func{
+  margin-top: 0.3rem;
+  .yi-zi{
+    color: #fff;
+    width: 5.25rem;
+    border-bottom: 0.02rem dashed white;
+    margin-top: 0.2rem;
+    padding-bottom: 0.1rem;
+    font-size: 0.25rem;
+    .zi{
+      line-height: 0.2rem;
+    }
+  }
+  .er-zi{
+    color: #fff;
+    width: 5.25rem;
+    font-size: 0.25rem;
     margin-top: 0.2rem;
   }
-  .z-two{
-    margin-top: -0.2rem;
-  }
 }
-.for-zi{
-  width: 5.25rem;
-  border-bottom: 0.02rem dashed white;
-  font-size: 0.25rem;
-  color: white;
-  .z-one{
-    margin-top: 0.2rem;
-  }
-  .z-two{
-    margin-top: -0.2rem;
-  }
-;
-}
-.fiv-zi{
-  color: #fff;
-  width: 5.25rem;
-  font-size: 0.25rem;
-  padding-top: 0.2rem;
-}
+

@@ -6,7 +6,7 @@
     .controller('HomeController', HomeController);
 
   /** @ngInject */
-  function HomeController($scope, $window, $log, $timeout) {
+  function HomeController($scope, $window, $log, $timeout, $location) {
     //Angular Animations: ng-view
     $scope.pageClass = 'page-home';
 
@@ -19,11 +19,11 @@
 
     $scope.arrImg = [];
 
-    for (var i = 1; i <= 24; i++) {
+    for (var i = 1; i < 24; i++) {
 
       var obj = {
-        src   : "assets/images/" + i + "@2x.png",
-        class : "img" + i + " animated",
+        src: "assets/images/" + i + "@2x.png",
+        class: "img" + i + " animated",
         random: randomAnimate(),
         active: false
       };
@@ -37,16 +37,25 @@
       (function (obj) {
         $timeout(function () {
           obj.active = true;
-          $log.debug(obj);
-          $log.debug('active = true');
-        }, i * 300);
+          //$log.debug(obj);
+          //$log.debug('active = true');
+        }, i * 500);
       })(obj);
 
     }
 
-    //$timeout(function () {
-    //  $scope.arrImg[0].active = true
-    //}, 2000);
+    $timeout(function () {
+      $scope.logoActive = true;
+      //$log.debug(obj);
+      //$log.debug('active = true');
+    }, 24 * 500);
 
+    $scope.gothird = function () {
+      if ($scope.user.paymew) {
+        $location.path("/getNowShared");
+      } else {
+        $location.path("/getNow");
+      }
+    }
   }
 })();

@@ -1,22 +1,23 @@
-
 <div class="bg">
+  <div class="mask" ng-show="showCaptcha">
+    <div class="first-mask">
+      <div class="words">
+        <p class="first-lines css3cf8ab84161ab">输入验证码</p>
+        <p class="second-lines css3cf8ab84161ab">完成注册</p>
+      </div>
+      <div class="yanzheng">
+        <input class="yanzheng-left" placeholder='输入验证码' type="text" ng-model="Identifying">
+        <img ng-src="{{captcha}}" alt="" class="yanzheng-right" ng-click="reimg()">
+      </div>
+      <button type="button" class="assign" ng-click="sub()">确定</button>
+    </div>
+  </div>
   <div class="bgs">
     <div class="bgw">
-      <div class="mask" ng-show="showCaptcha">
-        <div class="first-mask">
-          <div class="words">
-            <p class="first-lines css3cf8ab84161ab">输入验证码</p>
-            <p class="second-lines css3cf8ab84161ab">完成注册</p>
-          </div>
-          <div class="yanzheng">
-            <input class="yanzheng-left" placeholder='输入验证码' type="text" ng-model="Identifying">
-            <img ng-src="{{captcha}}" alt="" class="yanzheng-right" ng-click="reimg()">
-          </div>
-          <button type="button" class="assign" ng-click="sub()">确定</button>
-        </div>
-      </div>
+
       <div class="toutu">
         <img src="assets/getImg/biaoti@2x.png" alt="" class="biaoti">
+        <p class="money css3cf8ab84161ab">{{}}</p>
         <button class="gift5 css3cf8ab84161ab">5元活动福利</button>
       </div>
 
@@ -26,7 +27,9 @@
       </div>
       <div class="sj"></div>
       <form action="post" class="register">
-        <p class="head css3cf8ab84161ab"><手机号注册></p>
+        <p class="head css3cf8ab84161ab">
+          <手机号注册>
+        </p>
         <div class="obtain">
           <input type="text" placeholder="输入验证码" class="zuo" ng-model="verification">
           <button type="button" class="you" ng-click="phoneCode()">获取手机验证码</button>

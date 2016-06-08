@@ -15,6 +15,7 @@
     $scope.user = {
       phone: null,
       Qrcode:null,
+      getMoney:null,
       paymew: paymew,
       f: f
     };
