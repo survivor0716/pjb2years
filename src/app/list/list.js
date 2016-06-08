@@ -10,6 +10,13 @@
 
   /** @ngInject */
   function ListController($scope, $window, $log, $timeout) {
-
+    $scope.lists = [];
+    for(var i = 0; i < 5; i++) {
+      var data = {
+        name: '唯一****',
+        num: 8
+      };
+      $scope.lists.push(data);
+    }
   }
 })();

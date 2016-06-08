@@ -1,4 +1,4 @@
-(function() {
+(function () {
   'use strict';
 
   angular
@@ -6,7 +6,7 @@
     .controller('GetNowSharedController', GetNowSharedController);
 
   /** @ngInject */
-  function GetNowSharedController($timeout, webDevTec, toastr,$scope) {
+  function GetNowSharedController($scope) {
     $scope.Nowshow = false;
 
     $scope.isRegister = false;
@@ -27,7 +27,7 @@
       } else {
         $window.alert("请输入正确的手机号");
       }
-    }
+    };
 
     $scope.goToNew = function () {
       if ($scope.user.register) {
@@ -50,7 +50,7 @@
 
       } else {//如果是老用户
         if ($scope.user.activities) {
-          $scope.isRegister=true;
+          $scope.isRegister = true;
         }
       }
 

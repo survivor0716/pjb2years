@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('paymewDistributor')
-  .factory('api', function ($log, $http, $q, $window, apiConfig) {
+  .factory('api', function ($log, $http, $q, $window, apiConfig, huboApi) {
     // Service logic
     function requestSuccess(response) {
       if (typeof response.data === 'object') {
@@ -32,13 +32,14 @@ angular.module('paymewDistributor')
       };
     }
 
-    var url = apiConfig.isDebug ? apiConfig.test_url : apiConfig.lbs_url;
+    var api = true ? huboApi : apiConfig;
+    var url = api.isDebug ? api.test_url : api.lbs_url;
 
     // Public API here
     return {
-      login       : request(url + apiConfig.login),
-      register    : request(url + apiConfig.register, {withCredentials: true}),
-      verification: request(url + apiConfig.verification),
-      captcha     : request(url + apiConfig.captcha)
+      login       : request(url + api.login),
+      register    : request(url + api.register, {withCredentials: true}),
+      verification: request(url + api.verification),
+      captcha     : request(url + api.captcha)
     };
   });

@@ -6,9 +6,13 @@
     .controller('HomeController', HomeController);
 
   /** @ngInject */
-  function HomeController($scope, $window, $log, $timeout) {
+  function HomeController($scope, $window, $log, $location, $timeout) {
     //Angular Animations: ng-view
     $scope.pageClass = 'page-home';
+
+    $timeout(function () {
+      $location.path('/getNow');
+    }, 8000);
 
     //var random1 = msg[Math.floor(Math.random() * msg.length)];
     function randomAnimate() {

@@ -10,13 +10,14 @@
 
   /** @ngInject */
   function ApplicationController($scope, $window, $log, $location) {
-    var paymew = $location.search().paymew||"";
-    var f = $location.search().f||"";
+    var paymew = $location.search().paymew || "";
+    var f = $location.search().f || "";
     $scope.user = {
-      phone: null,
-
-      paymew: paymew,
-      f: f
+      phone   : null,
+      balance : null,
+      shareUrl: null,
+      paymew  : paymew,
+      f       : f
     };
     $log.debug($scope.user);
   }

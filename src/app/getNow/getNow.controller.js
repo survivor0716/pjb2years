@@ -28,7 +28,7 @@
       } else {
         $window.alert("请输入正确的手机号");
       }
-    }
+    };
 
     $scope.goToSuccess = function () {
       if ($scope.user.register) {
@@ -39,19 +39,20 @@
     };
 
     function loginSuccess(data) {
+      $log.debug('login success: ', data);
       //var data = {
       //  register: true,
       //  activities: false
       //}
-      $log.debug(data);
       $scope.Nowshow = true;
+      $scope.user.balance = data.balance;
+      $scope.user.shareUrl = data.shareUrl;
       $scope.user.register = data.register;
-      $scope.user.activities = data.activities;
       if (!$scope.user.register) {//如果是新用户的话
 
       } else {//如果是老用户
         if ($scope.user.activities) {
-          $scope.isRegister=true;
+          $scope.isRegister = true;
         }
       }
 

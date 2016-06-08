@@ -9,7 +9,12 @@
     .controller('FirstController', FirstController);
 
   /** @ngInject */
-  function FirstController($scope, $window, $log, $timeout) {
+  function FirstController($scope, $window, $log, $location, $timeout) {
+    //Angular Animations: ng-view
+    $scope.pageClass = 'page-first';
 
+    $timeout(function () {
+      $location.path('/home');
+    }, 1000)
   }
 })();
