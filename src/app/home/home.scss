@@ -17,9 +17,13 @@ $columns2: 21;
   }
 }
 
-.img11, .img12, .img24 {
+.img11, .img24 {
   @include animationSetting(1s, .5s);
 }
+.img12 {
+  @include animationSetting(1.5s, .5s);
+}
+
 
 .img1 {
   width: 1.36rem;

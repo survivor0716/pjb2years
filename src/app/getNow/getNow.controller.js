@@ -48,13 +48,14 @@
       $scope.Nowshow = true;
       $scope.user.register = data.register;
       $scope.user.Qrcode = data.Qrcode;
-      $scope.user.getMoney=data.getMoney;
+      $scope.user.getMoney = data.getMoney;
       $scope.user.activities = data.activities;
+      $window.localStorage.user = $scope.user;
       if (!$scope.user.register) {//如果是新用户的话
 
       } else {//如果是老用户
         if ($scope.user.activities) {
-          $scope.isRegister=true;
+          $scope.isRegister = true;
         }
       }
 

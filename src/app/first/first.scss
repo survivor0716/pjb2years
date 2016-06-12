@@ -97,12 +97,16 @@
 }
 
 .arrow {
-  width: 1rem;
+  width: .2rem;
   height: .2rem;
-  margin-top: .2rem;
-  background: aliceblue;
+  //margin-top: .2rem;
   opacity: 0;
   animation: fadeInOut 1.5s ease-out 2.5s infinite forwards;
+  .rotate {
+    transform: rotate(90deg);
+    font-size: .5rem;
+    color: #fff;
+  }
 }
 
 @-webkit-keyframes fadeInOut {

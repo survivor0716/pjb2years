@@ -1,4 +1,4 @@
-.mask_getNow{
+.mask_getNow {
   width: 6.4rem;
   height: 100%;
   background: rgba(0, 0, 0, 0.6);
@@ -6,100 +6,111 @@
   left: 0rem;
   top: 0rem;
   z-index: 999;
-  .gala{
-    width:4.36rem;
-    height: 2.98rem;
-    background: rgba(255,255,255,0.91);
+  .gala {
+    width: 4.36rem;
+    //height: 2.98rem;
+    background: rgba(255, 255, 255, 0.91);
     border-radius: 0.2rem;
     margin-top: 2.7rem;
     text-align: center;
-    .getNowImg3{
+    .getNowImg3 {
 
-      .getNowImg4{
+      .getNowImg4 {
         margin-top: 0.5rem;
         width: 2.16rem;
-        height:0.66rem;
+        height: 0.66rem;
       }
     }
   }
-  .gala_f{
+  .gala_f {
     width: 4.36rem;
     display: inline-block;
     color: black;
     font-weight: bolder;
     margin-top: 0.34rem;
     text-align: center;
-    letter-spacing:0.05rem;
+    letter-spacing: 0.05rem;
   }
-  .gala_u{
+  .gala_u {
     font-size: 0.3rem;
   }
-  .gala_get{
+  .gala_get {
     margin-top: 0;
     font-size: 0.3rem;
 
   }
-  .gala5{
+  .gala5 {
     font-size: 0.3rem;
     margin-top: 0.06rem;
-    color: rgb(141,32,22);
+    color: rgb(141, 32, 22);
   }
-  .gala_font{
+  .gala_font {
     font-size: 0.15rem;
     margin-top: 0.18rem;
     color: gray;
   }
-  .gala_click{
-    margin-top: 0.18rem;
+  .gala_click {
+    margin-top: 0.5rem;
+    margin-bottom: .2rem;
     width: 1.68rem;
     height: 0.58rem;
     color: #000;
-    background:orange;
+    background: orange;
     border: none;
     border-radius: 0.2rem;
     font-size: 0.35rem;
     text-align: center;
-    .getNowClick{
+    .getNowClick {
       width: 0.9rem;
       height: 0.31rem;
       margin-bottom: 0.1rem;
     }
-    .gala_click:active{
-      background: darken(orange,20%);
+    .gala_click:active {
+      background: darken(orange, 20%);
     }
   }
 }
-.dole{
+
+.dole {
   width: 5.25rem;
   height: 2.55rem;
-  background: rgb(245,220,34);
+  background: rgb(245, 220, 34);
   margin-top: 0.26rem;
   border-radius: 0.2rem;
-  .getNow{
+  .getNow {
     width: 2.1rem;
     text-align: center;
-    .getNowImg1{
+    .getNowImg1 {
       width: 2.1rem;
       height: 0.33rem;
       margin-bottom: 0.25rem;
       margin-top: 0.25rem;
     }
   }
-  input::-ms-input-placeholder{text-align: center;color:rgb(245,220,34);font-size: 0.25rem;}
-  input::-webkit-input-placeholder{text-align: center;color:rgb(245,220,34);font-size: 0.2rem;}
-  .phonenum{
+  input::-ms-input-placeholder {
+    text-align: center;
+    color: rgb(245, 220, 34);
+    font-size: 0.26rem;
+  }
+  input::-webkit-input-placeholder {
+    text-align: center;
+    color: rgb(245, 220, 34);
+    font-size: 0.26rem;
+  }
+  .phonenum {
     width: 4.9rem;
     height: 0.5rem;
     border: none;
-    color: rgb(245,220,34);
-    margin-top:0rem;
+    color: rgb(245, 220, 34);
+    margin-top: 0;
     margin-left: 0.1625rem;
     background: black;
     text-align: center;
-    font-size: 0.2rem;
-    letter-spacing:0.05rem;
+    font-size: 0.26rem;
+    font-weight: bold;
+    letter-spacing: 0.05rem;
   }
-  .go{
+  .go {
     width: 4.9rem;
     height: 0.5rem;
     border: none;
@@ -107,53 +118,57 @@
     color: black;
     margin-top: 0.4rem;
     margin-left: 0.1625rem;
-    background: rgb(242,153,1);
-    font-size: 0.2rem;
-    letter-spacing:0.05rem;
+    background: rgb(242, 153, 1);
+    font-size: 0.26rem;
+    font-weight: bold;
+    letter-spacing: 0.05rem;
   }
-  .go:active{
-    background: darken(rgb(242,153,1),20%);
+  .go:active {
+    background: darken(rgb(242, 153, 1), 20%);
   }
 }
-.gz{
+
+.gz {
   width: 2.04rem;
   height: 0.62rem;
-  margin-top:0.5rem;
+  margin-top: 0.5rem;
   border-bottom: 0.05rem solid white;
   //.actRule{
   //  margin-left: 0.2rem;
   //  margin-top:-0.02rem;
   //  letter-spacing:0.05rem;
   //}
-  .top{
+  .top {
     width: 2.04rem;
     height: 0.53rem;
     border: 0.02rem solid white;
     font-size: 0.35rem;
-    color: rgb(245,220,34);
+    color: rgb(245, 220, 34);
     font-weight: 900;
     text-align: center;
-    .getNowImg2{
+    .getNowImg2 {
       width: 1.84rem;
       height: 0.35rem;
     }
   }
 }
-.func{
-  margin-top: 0.3rem;
+
+.func {
+  margin-top: 0.5rem;
   text-align: center;
-  .yi-zi{
+  .yi-zi {
     color: #fff;
     width: 5.25rem;
     border-bottom: 0.02rem dashed white;
     margin-top: 0.2rem;
     padding-bottom: 0.1rem;
     font-size: 0.25rem;
-    .zi{
+    .zi {
       line-height: 0.2rem;
+      font-weight: bold;
     }
   }
-  .er-zi{
+  .er-zi {
     color: #fff;
     width: 5.25rem;
     font-size: 0.25rem;

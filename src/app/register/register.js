@@ -9,22 +9,22 @@
     .controller('RegisterController', RegisterController);
 
   /** @ngInject */
-  function RegisterController($scope, $window, $log, $timeout,$location,api) {
-    $scope.showCaptcha=false;
-    $scope.captcha="http://piaojubao.h5.dev.willar.net/IdentifyingPicture?random=";
-    $scope.regis=function(){
-      if($scope.pwd == null){
+  function RegisterController($scope, $window, $log, $timeout, $location, api) {
+    $scope.showCaptcha = false;
+    $scope.captcha = "http://piaojubao.h5.dev.willar.net/IdentifyingPicture?random=";
+    $scope.regis = function () {
+      if ($scope.pwd == null) {
         $window.alert("请输入密码");
-      }else if($scope.pwda != $scope.pwd){
+      } else if ($scope.pwda != $scope.pwd) {
         $window.alert("两次密码必须一致");
-      }else{
-        $scope.showCaptcha=true;
+      } else {
+        $scope.showCaptcha = true;
       }
-    }
-    $scope.phoneCode=function(){
-      var Verification={
-        phone:$scope.user.phone
-      }
+    };
+    $scope.phoneCode = function () {
+      var Verification = {
+        phone: $scope.user.phone
+      };
       api.verification(Verification)
         .then(function (data) {
           $log.debug(data);
@@ -36,11 +36,11 @@
           $log.debug(errMsg);
           $window.alert(errMsg);
         });
-    }
-    $scope.reimg=function(){
-      $scope.captcha="http://piaojubao.h5.dev.willar.net/IdentifyingPicture?random="+Math.random();
-    }
-    $scope.sub=function(){
+    };
+    $scope.reimg = function () {
+      $scope.captcha = "http://piaojubao.h5.dev.willar.net/IdentifyingPicture?random=" + Math.random();
+    };
+    $scope.sub = function () {
       var sub_data = {
         phone       : $scope.user.phone,
         verification: $scope.verification,
@@ -55,11 +55,12 @@
           $log.debug(data);
           if (data.register == true) {
             $scope.user.Qrcode = data.Qrcode;
+            $window.localStorage.user = JSON.stringify($scope.user);
             $location.path("/getSuccess");
           }
         }, function (errMsg) {
           $log.debug(errMsg);
-          $scope.showCaptcha=false;
+          $scope.showCaptcha = false;
           $window.alert(errMsg);
         });
     }

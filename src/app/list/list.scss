@@ -1,19 +1,19 @@
-.bj{
+.bj {
   margin-top: 1.4rem;
   width: 5.4rem;
   height: 80%;
-  background: url("../assets/listImg/BJ_@2x.png")no-repeat;
-  background-size:5.5rem 90%;
-  .list_check{
-    width:3.23rem;
-    height:0.76rem;
-    .check{
-      width:3.23rem;
-      height:0.76rem;
+  background: url("../assets/listImg/BJ_@2x.png") no-repeat;
+  background-size: 5.5rem 90%;
+  .list_check {
+    width: 3.23rem;
+    height: 0.76rem;
+    .check {
+      width: 3.23rem;
+      height: 0.76rem;
     }
   }
-  .gift_list{
-    width:4rem;
+  .gift_list {
+    width: 4rem;
     height: 5.05rem;
     border: 0.05rem solid yellow;
     border-radius: 0.2rem;
@@ -22,21 +22,24 @@
     font-size: 0.25rem;
     margin-top: 0.5rem;
     overflow: hidden;
-    li{
+    li {
       text-align: center;
       margin-left: 0.22rem;
       height: 1rem;
       line-height: 1rem;
       margin-right: 0.22rem;
       border-bottom: 0.02rem dashed white;
+      span {
+        font-weight: bold;
+      }
     }
   }
-  .gift_buttomlogo{
-    width:1.61rem;
+  .gift_buttomlogo {
+    width: 1.61rem;
     height: 0.55rem;
-    .bottomlogo{
+    .bottomlogo {
       margin-top: 0.5rem;
-      width:1.61rem;
+      width: 1.61rem;
       height: 0.55rem;
     }
   }
