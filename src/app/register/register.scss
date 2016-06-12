@@ -14,6 +14,9 @@
     margin-top: -0.1rem;
   }
 }
+.gift5:active{
+  background: darken(#fed22f,10%);
+}
 .font-use{
   width: 5rem;
   height: 1.2rem;
@@ -82,6 +85,9 @@
       background: rgb(238,134,22);
       font-size: 0.23rem;
     }
+    .you:active{
+      background: darken(rgb(238,134,22),10%);
+    }
   }
   .password{
     margin-top: 0.3rem;
@@ -115,6 +121,9 @@
     margin-left: 0.2rem;
     text-align: center;
     font-size: 0.23rem;
+  }
+  .more:active{
+    background: darken(rgb(238,134,22),10%);
   }
 }
 .mask{
@@ -190,6 +199,9 @@
         width: 0.9rem;
         height: 0.31rem;
       }
+    }
+    .assign:active{
+      background: darken(orange,10%);
     }
   }
 }

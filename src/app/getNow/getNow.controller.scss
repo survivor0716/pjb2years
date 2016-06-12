@@ -64,6 +64,9 @@
       height: 0.31rem;
       margin-bottom: 0.1rem;
     }
+    .gala_click:active{
+      background: darken(orange,20%);
+    }
   }
 }
 .dole{
@@ -107,6 +110,9 @@
     background: rgb(242,153,1);
     font-size: 0.2rem;
     letter-spacing:0.05rem;
+  }
+  .go:active{
+    background: darken(rgb(242,153,1),20%);
   }
 }
 .gz{
