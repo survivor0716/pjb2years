@@ -4,11 +4,13 @@
   height: 80%;
   background: url("../assets/listImg/BJ_@2x.png")no-repeat;
   background-size:5.5rem 90%;
-  .check{
+  .list_check{
     width:3.23rem;
     height:0.76rem;
-    margin-top: -0.4rem;
-    margin-left: 1.25rem;
+    .check{
+      width:3.23rem;
+      height:0.76rem;
+    }
   }
   .gift_list{
     width:4rem;
@@ -29,10 +31,13 @@
       border-bottom: 0.02rem dashed white;
     }
   }
-  .bottomlogo{
+  .gift_buttomlogo{
     width:1.61rem;
     height: 0.55rem;
-    margin-top: 0.5rem;
-    margin-left: 2rem;
+    .bottomlogo{
+      margin-top: 0.5rem;
+      width:1.61rem;
+      height: 0.55rem;
+    }
   }
 }

@@ -2,14 +2,18 @@
   <div class="bgs">
     <div class="bgw">
       <div class="bj">
-        <img src="assets/listImg/see@2x.png" alt="" class="check">
+        <div class="list_check">
+          <img src="assets/listImg/see@2x.png" alt="" class="check">
+        </div>
         <ul class="gift_list">
           <li ng-repeat="PNumber in phoneNumber">
             <span>{{PNumber.phone}}</span>
             <span>获得红包{{PNumber.randomThree}}元</span>
           </li>
         </ul>
-        <img src="assets/images/logo@2x.png" alt="" class="bottomlogo">
+        <div class="gift_buttomlogo">
+          <img src="assets/images/logo@2x.png" alt="" class="bottomlogo">
+        </div>
       </div>
     </div>
   </div>
