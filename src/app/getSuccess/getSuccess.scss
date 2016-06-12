@@ -77,6 +77,9 @@
       margin-bottom: 0.1rem;
     }
   }
+  .gift3:active{
+    background: darken(#f0ad4e,10%);
+  }
 }
 .concern{
   display: inline-block;
@@ -93,6 +96,12 @@
   border: none;
   border-radius: 0.12rem;
   margin-top: 0.23rem;
+}
+.List:active{
+  background: darken(orange,10%);
+}
+.rule:active{
+  background: darken(orange,10%);
 }
 .list{
   margin-left: 0.25rem;
