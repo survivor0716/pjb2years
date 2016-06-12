@@ -35,6 +35,9 @@
       margin-bottom: 0.1rem;
     }
   }
+  .file:active{
+    background:darken(rgb(242,153,1),10%);
+  }
   .click{
     margin-top: 0.5rem;
     margin-bottom: 0.25rem;

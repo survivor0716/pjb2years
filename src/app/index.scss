@@ -89,6 +89,18 @@ body {
   width: 1.5rem;
   text-align: center;
 }
+.open{
+  width: 0.5rem;
+  z-index: 999;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  img{
+    width: 0.5rem;
+    height: 0.5rem;
+  }
+}
+
 /**
  *  Do not remove the comments below. It's the markers used by gulp-inject to inject
  *  all your sass files automatically
