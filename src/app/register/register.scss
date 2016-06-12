@@ -7,6 +7,7 @@
   font-size: 0.35rem;
   font-weight:bolder;
   margin-left:1.3rem;
+  margin-top: 0.3rem;
 }
 .font-use{
   width: 5rem;
@@ -19,13 +20,16 @@
     font-size: 0.5rem;
     text-align: center;
     width: 100%;
+    transform: scale(1,0.9);
   }
   .usee{
     display: inline-block;
     width: 100%;
     color: #fed22f;
+    transform: scale(1,0.9);
     font-size: 0.5rem;
     text-align: center;
+    margin-top: -0.15rem;
   }
 }
 .sj{
