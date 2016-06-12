@@ -1,7 +1,14 @@
 <div class="bg">
   <div class="bgs">
     <div class="bgw">
-      <img ng-src="{{arr.src}}" ng-class="arr.class" ng-repeat="arr in arrImg">
+      <div>
+        <img ng-src="{{arr.src}}" ng-class="arr.class" ng-repeat="arr in arrImg1">
+      </div>
+
+      <div>
+        <img ng-src="{{arr.src}}" ng-class="arr.class" ng-repeat="arr in arrImg2">
+      </div>
+
       <img src="assets/images/logo@2x.png" alt="" class="img24 animated fadeIn" ng-show="logoActive" ng-click="gothird()">
     </div>
   </div>
