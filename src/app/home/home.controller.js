@@ -17,9 +17,10 @@
       return random1;
     }
 
-    $scope.arrImg = [];
+    $scope.arrImg1 = [];
+    $scope.arrImg2 = [];
 
-    for (var i = 1; i < 24; i++) {
+    for (var i = 1; i <= 10; i++) {
 
       var obj = {
         src: "assets/images/" + i + "@2x.png",
@@ -32,14 +33,38 @@
         obj.src = "assets/images/logo@2x.png";
       }
 
-      $scope.arrImg.push(obj);
+      $scope.arrImg1.push(obj);
 
       (function (obj) {
         $timeout(function () {
           obj.active = true;
           //$log.debug(obj);
           //$log.debug('active = true');
-        }, i * 500);
+        }, i * 1000);
+      })(obj);
+
+    }
+    for (var j = 13; j <= 24; i++) {
+
+      var obj = {
+        src: "assets/images/" + i + "@2x.png",
+        class: "img" + i + " animated",
+        random: randomAnimate(),
+        active: false
+      };
+
+      if (i == 24) {
+        obj.src = "assets/images/logo@2x.png";
+      }
+
+      $scope.arrImg2.push(obj);
+
+      (function (obj) {
+        $timeout(function () {
+          obj.active = true;
+          //$log.debug(obj);
+          //$log.debug('active = true');
+        }, i * 1000);
       })(obj);
 
     }
@@ -48,7 +73,7 @@
       $scope.logoActive = true;
       //$log.debug(obj);
       //$log.debug('active = true');
-    }, 24 * 500);
+    }, 500);
 
     $scope.gothird = function () {
       if ($scope.user.paymew) {

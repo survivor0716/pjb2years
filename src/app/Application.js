@@ -12,7 +12,7 @@
   function ApplicationController($scope, $window, $log, $location) {
     var paymew = $location.search().paymew||"";
     var f = $location.search().f||"";
-    if(!paymew){
+    if(paymew){
       $location.path("/getNowShared");
     }
     $scope.user = {
