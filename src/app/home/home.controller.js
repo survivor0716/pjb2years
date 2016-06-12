@@ -29,10 +29,6 @@
         active: false
       };
 
-      if (i == 24) {
-        obj.src = "assets/images/logo@2x.png";
-      }
-
       $scope.arrImg1.push(obj);
 
       (function (obj) {
@@ -44,16 +40,16 @@
       })(obj);
 
     }
-    for (var j = 13; j <= 24; i++) {
+    for (var j = 13; j <= 24; j++) {
 
       var obj = {
-        src: "assets/images/" + i + "@2x.png",
-        class: "img" + i + " animated",
+        src: "assets/images/" + j + "@2x.png",
+        class: "img" + j + " animated",
         random: randomAnimate(),
         active: false
       };
 
-      if (i == 24) {
+      if (j == 24) {
         obj.src = "assets/images/logo@2x.png";
       }
 
@@ -64,7 +60,7 @@
           obj.active = true;
           //$log.debug(obj);
           //$log.debug('active = true');
-        }, i * 1000);
+        }, j * 1000);
       })(obj);
 
     }
