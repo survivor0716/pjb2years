@@ -1,12 +1,28 @@
-.gift5{
-  width: 3.22rem;
-  height: 0.64rem;
-  border: none;
-  border-radius: 0.2rem;
-  background: #fed22f;
-  font-size: 0.35rem;
-  font-weight:bolder;
-  margin-left:1.3rem;
+.biaotiS{
+  width:3.77rem;
+  height: 1.33rem;
+  //margin-left:0.27rem;
+  //margin-top:0.8rem;
+ text-align: center;
+  .biaotiw{
+    width:3.77rem;
+    height: 1.33rem;
+    margin-top:0.8rem;
+  }
+}
+.gift5s{
+  text-align: center;
+  .gift5{
+    width: 3.22rem;
+    height: 0.64rem;
+    border: none;
+    border-radius: 0.2rem;
+    background: #fed22f;
+    font-size: 0.35rem;
+    font-weight:bolder;
+    //margin-left:1.3rem;
+    margin-top:1rem;
+  }
 }
 .font-use{
   width: 5rem;
@@ -16,16 +32,18 @@
     color: white;
     width: 5.2rem;
     height: 0.5rem;
-    font-size: 0.5rem;
+    font-size: 0.4rem;
     text-align: center;
     width: 100%;
+    line-height: normal;
   }
   .usee{
     display: inline-block;
     width: 100%;
     color: #fed22f;
-    font-size: 0.5rem;
+    font-size: 0.4rem;
     text-align: center;
+    line-height: normal;
   }
 }
 .sj{
@@ -34,7 +52,7 @@
   border-left:0.2rem solid transparent;
   border-right:0.2rem solid transparent;
   border-top:0.2rem solid white;
-  margin-top: 0.3rem;
+  margin-top: 0.2rem;
 }
 .register{
   background:rgb(245,220,34);

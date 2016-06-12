@@ -1,30 +1,16 @@
 <div class="bg">
   <div class="bgs">
     <div class="bgw">
-      <img src="assets/listImg/see@2x.png" alt="" class="check">
-      <ul class="gift_list">
-        <li>
-          <span>被解放**辉</span>
-          <span>获得红包16元</span>
-        </li>
-        <li>
-          <span>被解放**辉</span>
-          <span>获得红包16元</span>
-        </li>
-        <li>
-          <span>被解放**辉</span>
-          <span>获得红包16元</span>
-        </li>
-        <li>
-          <span>被解放**辉</span>
-          <span>获得红包16元</span>
-        </li>
-        <li>
-          <span>被解放**辉</span>
-          <span>获得红包16元</span>
-        </li>
-      </ul>
-      <img src="assets/images/logo@2x.png" alt="" class="bottomlogo">
+      <div class="bj">
+        <img src="assets/listImg/see@2x.png" alt="" class="check">
+        <ul class="gift_list">
+          <li ng-repeat="PNumber in phoneNumber">
+            <span>{{PNumber.phone}}</span>
+            <span>获得红包{{PNumber.randomThree}}元</span>
+          </li>
+        </ul>
+        <img src="assets/images/logo@2x.png" alt="" class="bottomlogo">
+      </div>
     </div>
   </div>
 </div>
