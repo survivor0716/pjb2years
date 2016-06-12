@@ -1,3 +1,21 @@
+@mixin animationSetting($duration, $delay) {
+  animation-duration: $duration;
+  animation-delay: $delay;
+}
+
+$columns1: 10;
+@for $column from 1 through $columns1 {
+  .img#{$column} {
+    @include animationSetting(1s, $column/4+s);
+  }
+}
+$columns2: 24;
+@for $column from 13 through $columns2 {
+  .img#{$column} {
+    @include animationSetting(1s, $column/4+s);
+  }
+}
+
 .img1 {
   width: 1.36rem;
   height: 0.52rem;
@@ -127,7 +145,7 @@
 
 .img17 {
   width: 3.27rem;
-  height:0.3rem;
+  height: 0.3rem;
   margin-left: 0.15rem;
   float: left;
   margin-top: 0.05rem;
@@ -179,6 +197,7 @@
   float: left;
   margin-top: -0.4rem;
 }
+
 .img24 {
   width: 1.61rem;
   height: 0.55rem;

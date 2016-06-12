@@ -12,7 +12,18 @@
 
     //var random1 = msg[Math.floor(Math.random() * msg.length)];
     function randomAnimate() {
-      var msg = ["fadeIn", "bounceInDown", "bounceInUp", "bounceInLeft", "bounceInRight", "bounceInDown", "bounceIn", "fadeInUp", "fadeInDown", "fadeInLeft", "fadeInRight"];
+      var msg = [
+        //"fadeIn",
+        "bounceInUp",
+        "bounceInDown",
+        "bounceInLeft",
+        "bounceInRight",
+        //"bounceIn"
+        "fadeInUp",
+        "fadeInDown",
+        "fadeInLeft",
+        "fadeInRight"
+      ];
       var random1 = msg[Math.floor(Math.random() * msg.length)];
       return random1;
     }
@@ -23,9 +34,8 @@
     for (var i = 1; i <= 10; i++) {
 
       var obj = {
-        src: "assets/images/" + i + "@2x.png",
-        class: "img" + i + " animated",
-        random: randomAnimate(),
+        src   : "assets/images/" + i + "@2x.png",
+        class : "animated " + randomAnimate() + " img" + i ,
         active: false
       };
 

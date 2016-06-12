@@ -95,3 +95,23 @@
     animation-delay:2s;
   }
 }
+
+.arrow {
+  width: 1rem;
+  height: .2rem;
+  margin-top: 1.2rem;
+  background: aliceblue;
+  animation: fadeInOut 1.5s ease-out infinite forwards;
+}
+
+@-webkit-keyframes fadeInOut {
+  0% {
+    transform: translatey(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translatey(.3rem);
+    opacity: 0;
+  }
+
+}

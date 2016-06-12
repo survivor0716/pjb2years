@@ -41,12 +41,12 @@
     }
     $scope.sub=function(){
       var sub_data = {
-        phone:$scope.user.phone,
-        verification:$scope.verification,
-        password: $scope.pwd,
-        Identifying:$scope.Identifying,
-        paymew:null,
-        f:null
+        phone       : $scope.user.phone,
+        verification: $scope.verification,
+        password    : $scope.pwd,
+        Identifying : $scope.Identifying,
+        paymew      : $scope.user.paymew,
+        f           : $scope.user.f
       };
       $log.debug(sub_data);
       api.register(sub_data)
