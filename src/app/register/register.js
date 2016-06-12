@@ -53,11 +53,13 @@
         .then(function (data) {
           $log.debug(data);
           if (data.register == true) {
+            $scope.user.Qrcode = data.Qrcode;
             $location.path("/getSuccess");
           }
         }, function (errMsg) {
           $log.debug(errMsg);
-          //$window.alert(errMsg);
+          $scope.showCaptcha=false;
+          $window.alert(errMsg);
         });
     }
   }
