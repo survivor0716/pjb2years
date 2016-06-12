@@ -13,12 +13,12 @@
     //var random1 = msg[Math.floor(Math.random() * msg.length)];
     function randomAnimate() {
       var msg = [
-        //"fadeIn",
+        "fadeIn",
         "bounceInUp",
         "bounceInDown",
         "bounceInLeft",
         "bounceInRight",
-        //"bounceIn"
+        "bounceIn",
         "fadeInUp",
         "fadeInDown",
         "fadeInLeft",
@@ -35,7 +35,7 @@
 
       var obj = {
         src   : "assets/images/" + i + "@2x.png",
-        class : "animated " + randomAnimate() + " img" + i ,
+        class : "animated " + randomAnimate() + " img" + i,
         active: false
       };
 
@@ -50,18 +50,14 @@
       })(obj);
 
     }
-    for (var j = 13; j <= 24; j++) {
+
+    for (var j = 13; j <= 23; j++) {
 
       var obj = {
-        src: "assets/images/" + j + "@2x.png",
-        class: "img" + j + " animated",
-        random: randomAnimate(),
+        src   : "assets/images/" + j + "@2x.png",
+        class : "animated " + randomAnimate() + " img" + j,
         active: false
       };
-
-      if (j == 24) {
-        obj.src = "assets/images/logo@2x.png";
-      }
 
       $scope.arrImg2.push(obj);
 
@@ -79,7 +75,7 @@
       $scope.logoActive = true;
       //$log.debug(obj);
       //$log.debug('active = true');
-    }, 500);
+    }, 250);
 
     $scope.gothird = function () {
       if ($scope.user.paymew) {

@@ -6,14 +6,19 @@
 $columns1: 10;
 @for $column from 1 through $columns1 {
   .img#{$column} {
-    @include animationSetting(1s, $column/4+s);
+    @include animationSetting(1s, .5+$column/2+s);
   }
 }
-$columns2: 24;
-@for $column from 13 through $columns2 {
-  .img#{$column} {
-    @include animationSetting(1s, $column/4+s);
+
+$columns2: 21;
+@for $column from 11 through $columns2 {
+  .img#{$column+2} {
+    @include animationSetting(1s, .5+$column/2+s);
   }
+}
+
+.img11, .img12, .img24 {
+  @include animationSetting(1s, .5s);
 }
 
 .img1 {

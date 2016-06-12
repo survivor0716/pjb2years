@@ -101,7 +101,8 @@
   height: .2rem;
   margin-top: .2rem;
   background: aliceblue;
-  animation: fadeInOut 1.5s ease-out infinite forwards;
+  opacity: 0;
+  animation: fadeInOut 1.5s ease-out 2.5s infinite forwards;
 }
 
 @-webkit-keyframes fadeInOut {

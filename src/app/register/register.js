@@ -28,6 +28,7 @@
       api.verification(Verification)
         .then(function (data) {
           $log.debug(data);
+          $window.alert("手机验证码发送成功");
           //if (data.register == false) {
           //  $scope.Nowshow = true;
           //}

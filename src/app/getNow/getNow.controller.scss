@@ -13,6 +13,14 @@
     border-radius: 0.2rem;
     margin-top: 2.7rem;
     text-align: center;
+    .getNowImg3{
+
+      .getNowImg4{
+        margin-top: 0.5rem;
+        width: 2.16rem;
+        height:0.66rem;
+      }
+    }
   }
   .gala_f{
     width: 4.36rem;
@@ -50,6 +58,12 @@
     border: none;
     border-radius: 0.2rem;
     font-size: 0.35rem;
+    text-align: center;
+    .getNowClick{
+      width: 0.9rem;
+      height: 0.31rem;
+      margin-bottom: 0.1rem;
+    }
   }
 }
 .dole{
@@ -61,7 +75,7 @@
   .getNow{
     width: 2.1rem;
     text-align: center;
-    .getNowImg{
+    .getNowImg1{
       width: 2.1rem;
       height: 0.33rem;
       margin-bottom: 0.25rem;
@@ -112,9 +126,10 @@
     font-size: 0.35rem;
     color: rgb(245,220,34);
     font-weight: 900;
-    .activeRule{
-      width: 2.04rem;
-      height: 0.62rem;
+    text-align: center;
+    .getNowImg2{
+      width: 1.84rem;
+      height: 0.35rem;
     }
   }
 }

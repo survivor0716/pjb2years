@@ -1,49 +1,33 @@
-.biaotiS{
-  width:3.77rem;
-  height: 1.33rem;
-  //margin-left:0.27rem;
-  //margin-top:0.8rem;
- text-align: center;
-  .biaotiw{
-    width:3.77rem;
-    height: 1.33rem;
-    margin-top:0.8rem;
-  }
-}
-.gift5s{
-  text-align: center;
-  .gift5{
-    width: 3.22rem;
-    height: 0.64rem;
-    border: none;
-    border-radius: 0.2rem;
-    background: #fed22f;
-    font-size: 0.35rem;
-    font-weight:bolder;
-    //margin-left:1.3rem;
-    margin-top:1rem;
+.gift5{
+  width: 3.22rem;
+  height: 0.64rem;
+  border: none;
+  border-radius: 0.2rem;
+  background: #fed22f;
+  font-size: 0.35rem;
+  font-weight:bolder;
+  margin-left:1.3rem;
+  margin-top: 0.3rem;
+  img{
+    width: 2.25rem;
+    height: 0.31rem;
+    margin-top: -0.1rem;
   }
 }
 .font-use{
   width: 5rem;
   height: 1.2rem;
-  .rover{
-    display: inline-block;
-    color: white;
-    width: 5.2rem;
-    height: 0.5rem;
-    font-size: 0.4rem;
-    text-align: center;
-    width: 100%;
-    line-height: normal;
+  .gone{
+    width: 5.08rem;
+    height:1.02rem;
   }
-  .usee{
-    display: inline-block;
-    width: 100%;
-    color: #fed22f;
-    font-size: 0.4rem;
-    text-align: center;
-    line-height: normal;
+}
+.biaotiS{
+  .biaotiw{
+    width: 3.77rem;
+    height: 1.33rem;
+    margin-top: 0.4rem;
+    margin-left: 1rem;
   }
 }
 .sj{
@@ -52,7 +36,7 @@
   border-left:0.2rem solid transparent;
   border-right:0.2rem solid transparent;
   border-top:0.2rem solid white;
-  margin-top: 0.2rem;
+  margin-top: 0.3rem;
 }
 .register{
   background:rgb(245,220,34);
@@ -69,6 +53,11 @@
     padding-top: 0.3rem;
     text-align: center;
     letter-spacing:0.05rem;
+    img{
+      width: 2.54rem;
+      height: 0.31rem;
+      margin-top: -0.2rem;
+    }
   }
   .obtain{
     margin-top: 0.1rem;
@@ -142,7 +131,7 @@
     width: 4.36rem;
     height: 2.98rem;
     border-radius: 0.2rem;
-    background: rgba(255,255,255,0.8);
+    background: rgba(255,255,255,0.9);
     margin-top:3rem;
     .words{
       width: 4.36rem;
@@ -157,6 +146,12 @@
         color: black;
         font-size: 0.38rem;margin-top: -0.5rem;
         text-align: center;
+      }
+      img{
+        width: 2.16rem;
+        height: 0.66rem;
+        margin-top: 0.3rem;
+        margin-left: 1rem
       }
     }
     .yanzheng{
@@ -191,6 +186,10 @@
       margin-left: 1.34rem;
       font-size: 0.38rem;
       margin-top: 0.32rem;
+      img{
+        width: 0.9rem;
+        height: 0.31rem;
+      }
     }
   }
 }
