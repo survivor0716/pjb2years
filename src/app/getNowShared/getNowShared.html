@@ -1,19 +1,23 @@
 <div class="bg">
+  <div class="mask_getNow" ng-show="Nowshow">
+    <div class="gala">
+      <span class="gala_f gala_u css3cf8ab84161ab">恭喜您</span>
+      <span class="gala_f gala_get css3cf8ab84161ab">已成功领取</span>
+      <span class="gala_f gala5 css3cf8ab84161ab"><{{user.getMoney}}元活动福利></span>
+      <span class="gala_f gala_font" ng-show="isRegister">您已经参加此活动</span>
+      <button class="gala_click css3cf8ab84161ab" ng-click="goToSuccess()">确定</button>
+    </div>
+  </div>
   <div class="bgs">
     <div class="bgw">
       <div class="dz">
-        <div class="mask_getNow" ng-show="Nowshow">
-          <div class="gala">
-            <span class="gala_f gala_u css3cf8ab84161ab">恭喜您</span>
-            <span class="gala_f gala_get css3cf8ab84161ab">已成功领取</span>
-            <span class="gala_f gala5 css3cf8ab84161ab">&lt;{{user.getMoney}}元活动福利&gt;</span>
-            <span class="gala_f gala_font" ng-show="isRegister">您已经参加此活动</span>
-            <button class="gala_click css3cf8ab84161ab" ng-click="goToSuccess()">确定</button>
-          </div>
-        </div>
         <input class="num" type="text" placeholder="输手机号码" ng-model="user.phone">
-        <button class="file css3cf8ab84161ab" type="button" ng-click="login()" maxlength="11">为好友点赞注册</button>
-        <p class="click css3cf8ab84161ab">&lt;点赞注册&gt;</p>
+        <button class="file css3cf8ab84161ab" type="button" ng-click="login()" maxlength="11">
+          <img src="assets/getImg/txt_14@2x.png" alt="" class="getNowSharedImg">
+        </button>
+        <div class="click">
+          <img src="assets/getImg/txt_15@2x.png" alt="">
+        </div>
         <p class="onetime">您在注册成功的同时</p>
         <p class="register_time">原分享用户将获得<span>2元</span>分享注册福利</p>
       </div>
