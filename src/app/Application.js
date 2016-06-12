@@ -9,7 +9,7 @@
     .controller('ApplicationController', ApplicationController);
 
   /** @ngInject */
-  function ApplicationController($scope, $log, $location) {
+  function ApplicationController($scope, $log, $location, $window) {
     var paymew = $location.search().paymew || '';
     var f = $location.search().f || '';
     if (paymew) {
@@ -23,5 +23,15 @@
       f       : f
     };
     $log.debug($scope.user);
+
+    $scope.toggleMusic = function () {
+      var audio = $window.document.getElementById("bgAudio");
+      if (audio.paused) {
+        audio.play();
+      }
+      else {
+        audio.pause();
+      }
+    };
   }
 })();
