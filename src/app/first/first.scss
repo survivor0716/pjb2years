@@ -1,98 +1,96 @@
 .bgb {
   width: 4.91rem;
   height: 7.49rem;
-  margin: auto;
+  margin: 0 auto;
   margin-top: 1.1rem;
   position: relative;
   .two {
     width: 2.77rem;
     height: 4.35rem;
-    margin-left: 1.2rem;
-    animation-delay:1s;
+    animation-delay: 1s;
   }
   .let {
     width: 2.78rem;
     height: 1.55rem;
-    animation-delay:1s;
-    margin-left: 1.2rem;
+    animation-delay: 1s;
+    margin: 0 1rem;
   }
   .first_logo {
     width: 1.61rem;
     height: 0.55rem;
     margin-top: 1rem;
-    animation-delay:1s;
-    margin-left: 1.7rem;
+    animation-delay: 1s;
   }
   .img_ani {
     animation-duration: 2s;
     -webkit-animation-duration: 2s;
   }
-  .BJ_1{
+  .BJ_1 {
     width: 4.91rem;
     height: 7.49rem;
     position: absolute;
-    left:0;
-    top:0;
+    left: 0;
+    top: 0;
   }
-  .get1{
-    width:0.66rem;
+  .get1 {
+    width: 0.66rem;
     height: 0.64rem;
     position: absolute;
-    left:0.4rem;
-    top:0.3rem;
+    left: 0.4rem;
+    top: 0.3rem;
   }
-  .get2{
+  .get2 {
     width: 0.76rem;
     height: 0.82rem;
     position: absolute;
-    left:4rem;
-    top:1rem;
-    animation-delay:2s;
+    left: 4rem;
+    top: 1rem;
+    animation-delay: 2s;
   }
-  .get3{
+  .get3 {
     width: 1.04rem;
     height: 1.05rem;
     position: absolute;
-    left:3.5rem;
-    top:2.2rem;
+    left: 3.5rem;
+    top: 2.2rem;
   }
-  .get4{
+  .get4 {
     width: 1.08rem;
     height: 1.31rem;
     position: absolute;
-    left:3.8rem;
-    top:3.7rem;
+    left: 3.8rem;
+    top: 3.7rem;
   }
-  .get5{
+  .get5 {
     width: 1.37rem;
     height: 0.87rem;
     position: absolute;
-    left:2.8rem;
-    top:5.7rem;
+    left: 2.8rem;
+    top: 5.7rem;
   }
-  .get6{
+  .get6 {
     width: 0.88rem;
     height: 0.6rem;
     position: absolute;
-    left:3.3rem;
-    top:6.1rem;
-    animation-delay:2s;
+    left: 3.3rem;
+    top: 6.1rem;
+    animation-delay: 2s;
   }
-  .get7{
+  .get7 {
     width: 0.94rem;
     height: 1.03rem;
     position: absolute;
-    left:0.2rem;
-    top:4.4rem;
-    animation-delay:2s;
+    left: 0.2rem;
+    top: 4.4rem;
+    animation-delay: 2s;
   }
-  .get8{
+  .get8 {
     width: 0.6rem;
     height: 0.88rem;
     position: absolute;
-    left:0.4rem;
-    top:3.7rem;
-    animation-delay:2s;
+    left: 0.4rem;
+    top: 3.7rem;
+    animation-delay: 2s;
   }
 }
 
@@ -103,7 +101,7 @@
   opacity: 0;
   animation: fadeInOut 1.5s ease-out 2.5s infinite forwards;
   .rotate {
-    transform: rotate(90deg);
+    transform: rotate(-90deg);
     font-size: .5rem;
     color: #fff;
   }
@@ -111,11 +109,11 @@
 
 @-webkit-keyframes fadeInOut {
   0% {
-    transform: translatey(0);
+    transform: translatey(.3rem);
     opacity: 1;
   }
   100% {
-    transform: translatey(.3rem);
+    transform: translatey(0);
     opacity: 0;
   }
 

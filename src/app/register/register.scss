@@ -6,7 +6,7 @@
   background: #fed22f;
   font-size: 0.35rem;
   font-weight: bolder;
-  margin-left: 1.3rem;
+  //margin-left: 1.3rem;
   margin-top: 0.3rem;
   img {
     width: 2.25rem;
@@ -21,10 +21,22 @@
 
 .font-use {
   width: 5rem;
-  height: 1.2rem;
+  //height: 1.2rem;
+  text-align: center;
+  margin-top: .2rem;
+  margin-bottom: .4rem;
   .gone {
-    width: 5.08rem;
-    height: 1.02rem;
+    width: 3.42rem;
+    height: .8rem;
+  }
+  .hint {
+    margin-top: .1rem;
+    p {
+      text-align: center;
+      font-size: .22rem;
+      color: #eee;
+      margin: 0;
+    }
   }
 }
 
@@ -33,7 +45,7 @@
     width: 3.77rem;
     height: 1.33rem;
     margin-top: 0.4rem;
-    margin-left: 1rem;
+    //margin-left: 1rem;
   }
 }
 
@@ -112,7 +124,6 @@
     border: none;
     background: black;
     color: rgb(245, 220, 34);
-    margin-left: 0.2rem;
     text-align: center;
     letter-spacing: 0.05rem;
   }
@@ -123,7 +134,6 @@
     border: none;
     background: black;
     color: rgb(245, 220, 34);
-    margin-left: 0.2rem;
     text-align: center;
     letter-spacing: 0.05rem;
   }
@@ -134,7 +144,6 @@
     height: 0.49rem;
     background: rgb(238, 134, 22);
     color: black;
-    margin-left: 0.2rem;
     text-align: center;
     font-size: 0.26rem;
     font-weight: bold;
@@ -146,11 +155,12 @@
 
 .mask {
   width: 6.4rem;
-  height: 108%;
+  height: 100%;
   background: rgba(0, 0, 0, 0.8);
   position: absolute;
   top: 0;
   left: 0;
+  text-align: center;
   input::-ms-input-placeholder {
     text-align: center;
     color: white;
@@ -187,7 +197,6 @@
         width: 2.16rem;
         height: 0.66rem;
         margin-top: 0.3rem;
-        margin-left: 1rem
       }
     }
     .yanzheng {
@@ -219,7 +228,6 @@
       color: black;
       border-radius: 0.2rem;
       border: none;
-      margin-left: 1.34rem;
       font-size: 0.38rem;
       margin-top: 0.32rem;
       img {

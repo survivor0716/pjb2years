@@ -11,11 +11,11 @@ angular.module('paymewDistributor')
       saveSecretCode: function (code) {
         secretCode = code;
       },
-      isAccessable: function () {
+      isAccessable  : function () {
         //return secretCode == 'dxy2014';
         return true;
       },
-      getShareData: function () {
+      getShareData  : function () {
         $window.alert($location.url());
         return $http.post('http://m.womai.com/517Coupon/getShare', {url: $location.url()})
           .then(function (response) {
@@ -31,7 +31,7 @@ angular.module('paymewDistributor')
             return $q.reject(response.data.errMsg);
           });
       },
-      invokeWXShare: function (data) {
+      invokeWXShare : function (data) {
         //微信分享
         //wx.config({
         //  appId    : _wxConfigArray.appId,
@@ -51,13 +51,13 @@ angular.module('paymewDistributor')
           }
         });
 
-        //var params = '?old=' + encodeURIComponent(data.current) + '&p=' + data.promotionId + '&rrp=323';
+        var params = '?paymew=' + data.paymew + '&f=' + data.f;
 
         var shareData = {
-          title : '票据宝2周年·给你好看', // 分享标题
-          desc  : '票据宝2周年·给你好看', // 分享描述
-          link  : 'http://20160501-promo-womai.vliang.com/dev/html/index.html', // 分享链接
-          imgUrl: 'http://womai2016.cdn.paymew.com/Icon/icon_womai_517Passport.png'  // 分享图标
+          title : '票据宝2岁了, 这个红包请收下', // 分享标题
+          desc  : '票据宝2岁了, 这个红包请收下', // 分享描述
+          link  : 'http://piaojubao.h5.dev.willar.net/web/#/' + params, // 分享链接
+          imgUrl: 'http://piaojubao.h5.dev.willar.net/web/assets/images/share-icon.jpg'  // 分享图标
         };
 
         wx.ready(function () {

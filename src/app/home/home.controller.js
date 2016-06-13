@@ -14,15 +14,15 @@
     function randomAnimate() {
       var msg = [
         "fadeIn",
-        "bounceInUp",
+        //"bounceInUp",
         "bounceInDown",
         "bounceInLeft",
-        "bounceInRight",
+        //"bounceInRight",
         "bounceIn",
-        "fadeInUp",
+        //"fadeInUp",
         "fadeInDown",
-        "fadeInLeft",
-        "fadeInRight"
+        "fadeInLeft"
+        //"fadeInRight"
       ];
       var random1 = msg[Math.floor(Math.random() * msg.length)];
       return random1;

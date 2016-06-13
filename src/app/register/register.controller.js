@@ -9,10 +9,21 @@
     .controller('RegisterController', RegisterController);
 
   /** @ngInject */
-  function RegisterController($scope, $window, $log, $timeout, $location, api) {
+  function RegisterController($scope, $window, $log, $location, api) {
+    $log.debug('enter register: ');
+    $log.debug('$scope.user: ', $scope.user);
+    if ($window.localStorage.user) {
+      $scope.user = JSON.parse($window.localStorage.user);
+    }
+
     $scope.showCaptcha = false;
     $scope.captcha = "http://piaojubao.h5.dev.willar.net/IdentifyingPicture?random=";
+
     $scope.regis = function () {
+      if (!$scope.verification) {
+        $window.alert("请先获取短信验证码");
+        return;
+      }
       if ($scope.pwd == null) {
         $window.alert("请输入密码");
       } else if ($scope.pwda != $scope.pwd) {
@@ -21,6 +32,7 @@
         $scope.showCaptcha = true;
       }
     };
+
     $scope.phoneCode = function () {
       var Verification = {
         phone: $scope.user.phone
@@ -37,9 +49,11 @@
           $window.alert(errMsg);
         });
     };
+
     $scope.reimg = function () {
       $scope.captcha = "http://piaojubao.h5.dev.willar.net/IdentifyingPicture?random=" + Math.random();
     };
+
     $scope.sub = function () {
       var sub_data = {
         phone       : $scope.user.phone,

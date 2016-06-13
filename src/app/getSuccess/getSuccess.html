@@ -1,31 +1,31 @@
 <div class="bg">
   <div class="mask" ng-show="disp" ng-click="closeMask()">
     <img class="first-background" src="assets/images/2.png">
-    <img class="Second-background" src="assets/images/1.png">
+    <img class="second-background" src="assets/images/1.png">
   </div>
   <div class="bgs">
     <div class="bgw">
-        <div class="toutu">
-          <img src="assets/getImg/biaoti@2x.png" alt="" class="biaoti">
-          <p class="money css3cf8ab84161ab">{{user.getMoney}}</p>
-          <img src="assets/getImg/Renwu@2x.png" alt="" class="task">
-        </div>
+      <div class="toutu">
+        <img src="assets/images/getImg/biaoti@2x.png" alt="" class="biaoti">
+        <p class="money css3cf8ab84161ab">{{user.getMoney}}</p>
+        <img src="assets/images/getImg/Renwu@2x.png" alt="" class="task">
+      </div>
       <div class="font_body">
         <span class="font_first">
-          ①长按如下图片,将活动图片保存并分享至好友或朋友圈
+          ① 长按如下图片, 将活动图片保存并分享至好友或朋友圈
         </span>
         <span class="font_sec">
-          邀请好友注册可得2元分享福利,至多可获得4名好友的注册奖励
+          邀请好友注册可得2元分享福利, 至多可获得4名好友的注册奖励
         </span>
       </div>
       <img ng-src="{{myVar}}" class="card" ng-model="Qrcode">
       <div class="btm">
-        <span class="click_this">②点击此处</span>
+        <span class="click_this">② 点击此处</span>
         <button class="gift3 css3cf8ab84161ab" ng-click="welfare()">
-          <img src="assets/getImg/txt_10@2x.png" alt="" class="getGift3">
+          <img src="assets/images/getImg/txt_10@2x.png" alt="" class="getGift3">
         </button>
+        <p class="concern">关注票据宝官方微信账号再得3元福利</p>
       </div>
-      <span class="concern">关注票据宝官方微信账号再得3元福利</span>
       <button class="gets list" ng-click="red()">查看红包榜单</button>
       <button class="gets rule" ng-click="rule()">红包使用规则</button>
     </div>

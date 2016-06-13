@@ -28,7 +28,7 @@
       } else {
         $window.alert("请输入正确的手机号");
       }
-    }
+    };
 
     $scope.goToSuccess = function () {
       if ($scope.user.register) {
@@ -50,7 +50,7 @@
       $scope.user.Qrcode = data.Qrcode;
       $scope.user.getMoney = data.getMoney;
       $scope.user.activities = data.activities;
-      $window.localStorage.user = $scope.user;
+      $window.localStorage.user = JSON.stringify($scope.user);
       if (!$scope.user.register) {//如果是新用户的话
 
       } else {//如果是老用户

@@ -9,20 +9,25 @@
     .controller('GetSuccessController', GetSuccessController);
 
   /** @ngInject */
-  function GetSuccessController($scope,$location, $window, $log, $timeout) {
-    $log.debug($scope.user.Qrcode);
+  function GetSuccessController($scope, $window, $log, $location) {
+    $log.debug('enter getSuccess: ');
+    $log.debug('$scope.user: ', $scope.user);
+    if ($window.localStorage.user) {
+      $scope.user = JSON.parse($window.localStorage.user);
+    }
+
     $scope.disp = false;
     $scope.myVar = $scope.user.Qrcode;
-    $scope.red=function() {
+    $scope.red = function () {
       $location.path("/list");
     };
-    $scope.rule=function() {
+    $scope.rule = function () {
       $location.path("/rule");
     };
-    $scope.welfare=function(){
+    $scope.welfare = function () {
       $scope.disp = true;
     };
-    $scope.closeMask=function(){
+    $scope.closeMask = function () {
       $scope.disp = false;
     };
   }

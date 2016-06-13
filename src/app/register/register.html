@@ -5,7 +5,7 @@
         <img src="assets/images/txt_17@2x.png" alt="">
       </div>
       <div class="yanzheng">
-        <input class="yanzheng-left" placeholder='输入验证码' type="text" ng-model="Identifying">
+        <input class="yanzheng-left" placeholder='输入验证码' type="tel" ng-model="Identifying" maxlength="4">
         <img ng-src="{{captcha}}" alt="" class="yanzheng-right" ng-click="reimg()">
       </div>
       <button type="button" class="assign" ng-click="sub()">
@@ -27,16 +27,23 @@
         </div>
       </div>
 
-      <div class="font-use">
+      <div class="font-use" ng-show="!user.paymew">
         <img class="gone" src="assets/images/txt_5@2x.png" alt="">
       </div>
-      <div class="sj"></div>
+      <div class="font-use" ng-show="user.paymew">
+        <img class="gone" src="assets/images/txt_16@2x.png" alt="">
+        <div class="hint">
+          <p>注册完成后</p>
+          <p>原分享好友将获得2元分享福利</p>
+        </div>
+      </div>
+      <!--<div class="sj"></div>-->
       <form action="post" class="register">
         <p class="head css3cf8ab84161ab">
           <img src="assets/images/txt_6@2x_07.png" alt="">
         </p>
         <div class="obtain">
-          <input type="text" placeholder="输入验证码" class="zuo" ng-model="verification" maxlength="4">
+          <input type="tel" placeholder="输入验证码" class="zuo" ng-model="verification" maxlength="4">
           <button type="button" class="you" ng-click="phoneCode()">获取手机验证码</button>
         </div>
         <input class="password" type="password" placeholder="输入密码" ng-model="pwd">

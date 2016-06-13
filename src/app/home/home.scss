@@ -20,10 +20,24 @@ $columns2: 21;
 .img11, .img24 {
   @include animationSetting(1s, .5s);
 }
+
 .img12 {
+  animation: pulse 1.5s ease-out 2.5s infinite forwards;
   @include animationSetting(1.5s, .5s);
 }
 
+@-webkit-keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: translatey(1);
+  }
+
+}
 
 .img1 {
   width: 1.36rem;
@@ -107,17 +121,14 @@ $columns2: 21;
 .img11 {
   width: 5.44rem;
   height: 1.3rem;
-  margin-left: 0.15rem;
-  float: left;
   margin-top: 0.15rem;
 }
 
 .img12 {
   width: 4.58rem;
   height: 0.88rem;
-  margin-left: 0.6rem;
-  float: left;
-  margin-top: -1.2rem;
+  position: relative;
+  top: -1.2rem;
 }
 
 .img13 {
@@ -210,7 +221,5 @@ $columns2: 21;
 .img24 {
   width: 1.61rem;
   height: 0.55rem;
-  margin-left: 2rem;
-  float: left;
-  margin-top: 0.4rem;
+  margin-top: .4rem;
 }

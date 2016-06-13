@@ -65,7 +65,7 @@
       height: 0.31rem;
       margin-bottom: 0.1rem;
     }
-    .gala_click:active {
+    &:active {
       background: darken(orange, 20%);
     }
   }
@@ -103,7 +103,6 @@
     border: none;
     color: rgb(245, 220, 34);
     margin-top: 0;
-    margin-left: 0.1625rem;
     background: black;
     text-align: center;
     font-size: 0.26rem;
@@ -117,7 +116,6 @@
     bottom: 0.45rem;
     color: black;
     margin-top: 0.4rem;
-    margin-left: 0.1625rem;
     background: rgb(242, 153, 1);
     font-size: 0.26rem;
     font-weight: bold;
@@ -173,6 +171,13 @@
     width: 5.25rem;
     font-size: 0.25rem;
     margin-top: 0.2rem;
+    .zi {
+      line-height: 0.2rem;
+      font-weight: bold;
+    }
   }
 }
 
+.yellow {
+  color: #f5dc22;
+}

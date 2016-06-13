@@ -13,7 +13,7 @@
 
     function randomphoneOne() {
 
-      var phoneLeft = ["13", "14","15","16", "17", "18"];
+      var phoneLeft = [185, 186, 139, 133, 158, 159, 151, 152, 153, 189, 188];
 
       var random2 = phoneLeft[Math.floor(Math.random() * phoneLeft.length)];
 
@@ -43,11 +43,11 @@
 
     for (var x = 1; x <= 5; x++) {
 
-      var randomphoneN=randomphoneOne()+randomphoneTwo()+"xxxx"+randomphoneTwo()+randomphoneTwo()+randomphoneTwo()+randomphoneTwo();
+      var randomphoneN = randomphoneOne() + "xxxx" + randomphoneTwo() + randomphoneTwo() + randomphoneTwo() + randomphoneTwo();
 
       var obj = {
-        phone:randomphoneN,
-        randomThree:randomphoneThree()
+        phone      : randomphoneN,
+        randomThree: randomphoneThree()
       };
 
       $scope.phoneNumber.push(obj);
