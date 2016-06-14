@@ -34,7 +34,31 @@ $columns2: 21;
     transform: scale(1.1);
   }
   100% {
-    transform: translatey(1);
+    transform: scale(1);
+  }
+
+}
+
+.shou {
+  width: .77rem;
+  height: .62rem;
+  position: absolute;
+  top: 1rem;
+  right: .4rem;
+  animation: point 1.5s ease-out 2.5s infinite forwards;
+  @include animationSetting(1.5s, .5s);
+  z-index: 9;
+}
+
+@-webkit-keyframes point {
+  0% {
+    transform: translate(0);
+  }
+  50% {
+    transform: translate(.3rem, .3rem);
+  }
+  100% {
+    transform: translate(0);
   }
 
 }

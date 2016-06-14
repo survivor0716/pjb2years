@@ -6,7 +6,7 @@
     .controller('GetNowSharedController', GetNowSharedController);
 
   /** @ngInject */
-  function GetNowSharedController($scope, $window, $log, api, $location) {
+  function GetNowSharedController($scope, $window, $log, api, $location, wxshare) {
 
     $scope.Nowshow = false;
 
@@ -47,10 +47,12 @@
       $log.debug(data);
       $scope.Nowshow = true;
       $scope.user.register = data.register;
+      $scope.user.activities = data.activities;
       $scope.user.Qrcode = data.Qrcode;
       $scope.user.getMoney = data.getMoney;
-      $scope.user.activities = data.activities;
+      $scope.user.mypaymew = data.paymew;
       $window.localStorage.user = JSON.stringify($scope.user);
+      wxshare.invokeWXShare($scope.user);
       if (!$scope.user.register) {//如果是新用户的话
 
       } else {//如果是老用户

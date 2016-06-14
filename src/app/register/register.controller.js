@@ -9,7 +9,7 @@
     .controller('RegisterController', RegisterController);
 
   /** @ngInject */
-  function RegisterController($scope, $window, $log, $location, api) {
+  function RegisterController($scope, $window, $log, $location, api, wxshare) {
     $log.debug('enter register: ');
     $log.debug('$scope.user: ', $scope.user);
     if ($window.localStorage.user) {
@@ -17,7 +17,7 @@
     }
 
     $scope.showCaptcha = false;
-    $scope.captcha = "http://piaojubao.h5.dev.willar.net/IdentifyingPicture?random=";
+    $scope.captcha = "http://piaojubao.h5.dev.willar.net/IdentifyingPicture?random=" + Math.random();
 
     $scope.regis = function () {
       if (!$scope.verification) {
@@ -30,6 +30,7 @@
         $window.alert("两次密码必须一致");
       } else {
         $scope.showCaptcha = true;
+        $scope.reimg();
       }
     };
 
@@ -53,14 +54,17 @@
     $scope.reimg = function () {
       $scope.captcha = "http://piaojubao.h5.dev.willar.net/IdentifyingPicture?random=" + Math.random();
     };
-
     $scope.sub = function () {
+      if(!$scope.Identifying) {
+        $window.alert('请输入图形验证码');
+        return;
+      }
       var sub_data = {
         phone       : $scope.user.phone,
         verification: $scope.verification,
         password    : $scope.pwd,
         Identifying : $scope.Identifying,
-        paymew      : $scope.user.paymew,
+        paymew      : $scope.user.old,
         f           : $scope.user.f
       };
       $log.debug(sub_data);
@@ -69,7 +73,9 @@
           $log.debug(data);
           if (data.register == true) {
             $scope.user.Qrcode = data.Qrcode;
+            $scope.user.mypaymew = data.paymew;
             $window.localStorage.user = JSON.stringify($scope.user);
+            wxshare.invokeWXShare($scope.user);
             $location.path("/getSuccess");
           }
         }, function (errMsg) {

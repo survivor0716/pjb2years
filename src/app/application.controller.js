@@ -24,6 +24,7 @@
       Qrcode    : null,
       getMoney  : null,
       paymew    : paymew,
+      mypaymew  : null,
       f         : f
     };
     $log.debug('$scope.user: ', $scope.user);

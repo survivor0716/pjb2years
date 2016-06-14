@@ -51,7 +51,7 @@ angular.module('paymewDistributor')
           }
         });
 
-        var params = '?paymew=' + data.paymew + '&f=' + data.f;
+        var params = '?paymew=' + data.mypaymew + '&f=' + data.f;
 
         var shareData = {
           title : '票据宝2岁了, 这个红包请收下', // 分享标题
