@@ -15,6 +15,7 @@
       login       : '/Login',
       register    : '/Register',
       verification: '/Verification',
-      captcha     : '/IdentifyingPicture'
+      captcha     : '/IdentifyingPicture',
+      wxshare     : '/Share'
     });
 })();

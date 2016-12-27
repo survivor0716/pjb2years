@@ -16,8 +16,11 @@
       $scope.user = JSON.parse($window.localStorage.user);
     }
 
+    var apiUrl = $location.absUrl().split('/web');
+    $log.debug(apiUrl);
+
     $scope.showCaptcha = false;
-    $scope.captcha = "http://piaojubao.h5.dev.willar.net/IdentifyingPicture?random=" + Math.random();
+    $scope.captcha = apiUrl[0] + "/IdentifyingPicture?random=" + Math.random();
 
     $scope.regis = function () {
       if (!$scope.verification) {
@@ -52,7 +55,7 @@
     };
 
     $scope.reimg = function () {
-      $scope.captcha = "http://piaojubao.h5.dev.willar.net/IdentifyingPicture?random=" + Math.random();
+      $scope.captcha = apiUrl[0] + "/IdentifyingPicture?random=" + Math.random();
     };
     $scope.sub = function () {
       if(!$scope.Identifying) {
@@ -64,7 +67,7 @@
         verification: $scope.verification,
         password    : $scope.pwd,
         Identifying : $scope.Identifying,
-        paymew      : $scope.user.old,
+        paymew      : $scope.user.paymew,
         f           : $scope.user.f
       };
       $log.debug(sub_data);

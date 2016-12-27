@@ -51,13 +51,15 @@ angular.module('paymewDistributor')
           }
         });
 
+        var apiUrl = $location.absUrl().split('/web');
+        $log.debug(apiUrl);
         var params = '?paymew=' + data.mypaymew + '&f=' + data.f;
 
         var shareData = {
           title : '票据宝2岁了, 这个红包请收下', // 分享标题
           desc  : '票据宝2岁了, 这个红包请收下', // 分享描述
-          link  : 'http://piaojubao.h5.dev.willar.net/web/#/' + params, // 分享链接
-          imgUrl: 'http://piaojubao.h5.dev.willar.net/web/assets/images/share-icon.jpg'  // 分享图标
+          link  : apiUrl[0] + '/web/#/' + params, // 分享链接
+          imgUrl: apiUrl[0] + '/web/assets/images/share-icon.jpg'  // 分享图标
         };
 
         wx.ready(function () {

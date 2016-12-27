@@ -10,6 +10,8 @@
     //Angular Animations: ng-view
     $scope.pageClass = 'page-home';
 
+    $log.debug($location);
+
     //var random1 = msg[Math.floor(Math.random() * msg.length)];
     function randomAnimate() {
       var msg = [

@@ -9,7 +9,8 @@
     .controller('ApplicationController', ApplicationController);
 
   /** @ngInject */
-  function ApplicationController($scope, $log, $location, $window, $http, wxshare) {
+  function ApplicationController($scope, $log, $location, $window, $http, wxshare, apiConfig) {
+    $log.debug($location);
     var paymew = $location.search().paymew || null;
     var f = $location.search().f || null;
     if (paymew) {
@@ -47,9 +48,13 @@
     };
 
     //加载自定义微信分享
-    var postUrl = 'http://piaojubao.h5.dev.willar.net/Share';
+    var apiUrl = $location.absUrl().split('/web');
+    $log.debug(apiUrl);
+
+    var postUrl = apiUrl[0] + '/Share';
     var url = encodeURIComponent($window.location.href);
     var params = {url: url};
+    //$window.alert(JSON.stringify(params));
     $http.post(postUrl, params)
       .then(function (rs) {
         $log.debug(rs);
